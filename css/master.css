@@ -95,11 +95,11 @@ a {
 
 .panel h2 {
   font-size: 200%;
-  margin: 12px 8px 0 8px;
+  margin: 0.6em 0.4em 0 0.4em;
 }
 
 .panel p {
-  padding: 8px;
+  padding: 0.4em 0.8em;
 }
 
 .block {
@@ -211,6 +211,10 @@ a {
   color: #C5C5C5;
 }
 
+#post h3 {
+  margin: 0.4em 0.6em;
+}
+
 #contact ul {
   list-style-type: none;
   margin: 0;
@@ -235,3 +239,4 @@ a {
   text-align: center;
   padding: 30px;
 }
+
