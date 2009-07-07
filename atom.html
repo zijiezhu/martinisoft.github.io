@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Martini Software</title>
+ <link href="http://martinisoft.github.com/atom.xml" rel="self"/>
+ <link href="http://martinisoft.github.com/"/>
+ <updated>2009-07-07T12:28:56-04:00</updated>
+ <id>http://martinisoft.github.com/</id>
+ <author>
+   <name>Aaron Kalin</name>
+   <email>akalin@martinisoftware.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Adventures in Makefiles</title>
+   <link href="http://martinisoft.github.com//2009/06/18/adventures-in-makefiles.html"/>
+   <updated>2009-06-18T00:00:00-04:00</updated>
+   <id>http://martinisoft.github.com//2009/06/18/adventures-in-makefiles</id>
+   <content type="html">&lt;p&gt;Writing Makefiles is painful. Especially in multiple platforms. Check out the source code to any C or C++ based application to see what I mean. You&amp;#8217;ll quickly lose your sanity wrapping your brain around the syntax, scope and depth of these files. Thankfully there are tools out there to make this job much easier, but which one? I chose Premake.&lt;/p&gt;
+
+&lt;h3 id='looking_around'&gt;Looking Around&lt;/h3&gt;
+
+&lt;p&gt;Initially I gave CMake and Scons a good run for the money. You&amp;#8217;ll see my struggle with this issue in Listbotto. Going back and forth, editing and referencing documentation. After nearly two full days I finally got a working compile, but at what cost? Nearly two full days I could have been writing code! My search for a proper tool finally landed me at the doorstep of &lt;a href='http://industriousone.com/premake'&gt;Premake&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Premake is written in C and LUA by &lt;a href='http://sourceforge.net/project/memberlist.php?group_id=71616'&gt;3 people&lt;/a&gt;. LUA is an embeddable scripting language that has been around for years. It&amp;#8217;s also been used in projects like &lt;a href='http://www.garrysmod.com/'&gt;Garry&amp;#8217;s Mod&lt;/a&gt; and &lt;a href='http://www.farcrygame.com/'&gt;FarCry&lt;/a&gt;. There is beauty in both its simplicity and power as a language because you can extend the features. You&amp;#8217;ll also find lots of support, books, documentation, and help from various communities that use the language, which is a plus.&lt;/p&gt;
+
+&lt;h3 id='switching_to_premake'&gt;Switching To Premake&lt;/h3&gt;
+
+&lt;p&gt;After making the decision on Premake, switching was amazingly easy. This was partly because the site has some recipes to get you started. After adding all the directories I finally got a compile to happen in 10 minutes. I think the neighbors might have heard my cries of joy.&lt;/p&gt;
+
+&lt;p&gt;Soon after the switch I had other libraries added in, compiling, working. I was personally relieved to not only put the whole build tools issue behind me, but to finally look at my code again. I honestly compare this to how Ruby on Rails takes a lot of the pain away with web application development. Much of the heavy lifting is done, just write code!&lt;/p&gt;
+
+&lt;p&gt;It wasn&amp;#8217;t all sparkles and fun though because there are some drawbacks to me choosing this system, but I can live with them for the time being.&lt;/p&gt;
+
+&lt;h3 id='it_wasnt_all_perfect'&gt;It Wasn&amp;#8217;t All Perfect&lt;/h3&gt;
+
+&lt;p&gt;Premake (as of 4.0) does not have a way to generate projects for XCode, though it is planned for 4.1 and 4.2. If you compare it to tools like CMake, you honestly won&amp;#8217;t get the control you&amp;#8217;re seeking, but you can add it if needed. I also found a gotcha with the syntax, but it was quickly figured out and I&amp;#8217;ll be submitting some patches soon.&lt;/p&gt;
+
+&lt;h3 id='final_thoughts'&gt;Final Thoughts&lt;/h3&gt;
+
+&lt;p&gt;This post is not meant to start a flame war about which build tool is better. I firmly believe each serves a great purpose based on what you need. It took many years for the KDevelop project to switch from Make to CMake. They even tried SCons, but found CMake to be what the doctor ordered. Some people I know swear by SCons, while others say CMake is amazing. It&amp;#8217;s all very simple, pick the tool for the job you need and one you&amp;#8217;ll love to use.&lt;/p&gt;
+
+&lt;p&gt;Premake was a joy to work with in comparison to the others I tried, which is why it stuck. Your mileage may vary of course. Now I need to get back to coding.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Welcome to 'Martini Software'</title>
+   <link href="http://martinisoft.github.com//2009/05/23/first-post.html"/>
+   <updated>2009-05-23T00:00:00-04:00</updated>
+   <id>http://martinisoft.github.com//2009/05/23/first-post</id>
+   <content type="html">&lt;p&gt;Whew! After many years of on and off editing, I finally built a site that I love to call home. Big thanks to the folks at Github for adding this feature to their service. Seems that every time I look at the site, there is a new feature.&lt;/p&gt;
+
+&lt;p&gt;Now my plans are to post at least once per month with topics about programming and other geeky stuff. I&amp;#8217;ll be making my first real post in the next couple of weeks.&lt;/p&gt;</content>
+ </entry>
+ 
+ 
+</feed>
