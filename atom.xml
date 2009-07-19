@@ -4,13 +4,54 @@
  <title>Martini Software</title>
  <link href="http://martinisoft.github.com/atom.xml" rel="self"/>
  <link href="http://martinisoft.github.com/"/>
- <updated>2009-06-18T10:54:58-04:00</updated>
+ <updated>2009-07-19T03:18:17-04:00</updated>
  <id>http://martinisoft.github.com/</id>
  <author>
    <name>Aaron Kalin</name>
    <email>akalin@martinisoftware.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Haml and Sass with Rails</title>
+   <link href="http://martinisoft.github.com//2009/07/19/haml-and-sass.html"/>
+   <updated>2009-07-19T00:00:00-04:00</updated>
+   <id>http://martinisoft.github.com//2009/07/19/haml-and-sass</id>
+   <content type="html">&lt;p&gt;Getting back into the latest Rails and installing the latest version of the greatest HTML markup system ever was a little tougher than expected. Turns out the new hotness with Rails since 2.1 is to config.gem everything, which makes sense. This doesn&amp;#8217;t work well for things like HAML, which expect to be plugins. Luckily you can conform to the new trend without littering your vendor/plugins folder.&lt;/p&gt;
+
+&lt;h3 id='installing_haml_and_sass'&gt;Installing HAML and Sass&lt;/h3&gt;
+
+&lt;p&gt;You must first do a basic gem install of haml thusly:&lt;/p&gt;
+&lt;pre&gt;
+    $ sudo gem install haml
+&lt;/pre&gt;
+&lt;p&gt;Once completed you&amp;#8217;ll need to add the following to your environment.rb&lt;/p&gt;
+&lt;pre&gt;
+    config.gem &quot;haml&quot;
+&lt;/pre&gt;
+&lt;p&gt;Next comes the cool trick&amp;#8230;&lt;/p&gt;
+
+&lt;h3 id='the_trick'&gt;The Trick&lt;/h3&gt;
+
+&lt;p&gt;As of Rails 2.0, the default load order for configuration is as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;config/preinitializer.rb (if the file exists)&lt;/li&gt;
+
+&lt;li&gt;config/environment.rb&lt;/li&gt;
+
+&lt;li&gt;config/environments/* (defaults to your current environment)&lt;/li&gt;
+
+&lt;li&gt;config/initializers/*.rb&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You have to place the following in a new file inside the config/initializers/ folder (I called mine haml_and_sass.rb) in order to get HAML to properly load, which allows you to configure its options as well.&lt;/p&gt;
+&lt;pre&gt;
+    # Init HAML
+    Haml.init_rails(binding)
+&lt;/pre&gt;
+&lt;p&gt;Once you add that, SASS will work beautifully and allow you to configure it normally.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Adventures in Makefiles</title>
