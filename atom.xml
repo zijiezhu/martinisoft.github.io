@@ -4,13 +4,66 @@
  <title>Martini Software</title>
  <link href="http://martinisoft.github.com/atom.xml" rel="self"/>
  <link href="http://martinisoft.github.com/"/>
- <updated>2009-07-19T03:18:17-04:00</updated>
+ <updated>2009-08-05T23:59:07-04:00</updated>
  <id>http://martinisoft.github.com/</id>
  <author>
    <name>Aaron Kalin</name>
    <email>akalin@martinisoftware.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Nokogiri on Leopard</title>
+   <link href="http://martinisoft.github.com//2009/07/31/nokogiri-on-leopard.html"/>
+   <updated>2009-07-31T00:00:00-04:00</updated>
+   <id>http://martinisoft.github.com//2009/07/31/nokogiri-on-leopard</id>
+   <content type="html">&lt;p&gt;My first experience with &lt;a href='http://en.wikipedia.org/wiki/Regular_expression'&gt;Regular Expressions&lt;/a&gt; was writing whats called a &lt;a href='http://en.wikipedia.org/wiki/Web_scraping'&gt;web scraper&lt;/a&gt; to fetch weather data from Weather.com. Back then, this would involve a ton of IF statements and a large array of data. Very tedious and time consuming, but it was very educational. Today, Ruby has a couple convenient libraries built for this sort of task. Even a way to mimic a browser so you can get to pages normally reserved for site members.&lt;/p&gt;
+
+&lt;p&gt;After some careful research I settled on &lt;a href='http://nokogiri.rubyforge.org/'&gt;Nokogiri&lt;/a&gt; because its the library of choice with &lt;a href='http://mechanize.rubyforge.org/'&gt;Mechanize&lt;/a&gt;, which I use to grab data from web sites and scrape the data from them easily. Before you can really use this library on OSX Leopard, you have to jump through a few hoops.&lt;/p&gt;
+
+&lt;p&gt;Mechanize may give you an error message like so:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;WARNING: Nokogiri was built against LibXML version 2.7.3, but has dynamically loaded 2.6.16 HI. You&amp;#8217;re using libxml2 version 2.6.16 which is over 4 years old and has plenty of bugs. We suggest that for maximum HTML/XML parsing pleasure, you upgrade your version of libxml2 and re-install nokogiri. If you like using libxml2 version 2.6.16, but don&amp;#8217;t like this warning, please define the constant I_KNOW_I_AM_USING_AN_OLD_AND_BUGGY_VERSION_OF_LIBXML2 before requring nokogiri.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is easy to fix, so here&amp;#8217;s how to get rolling in Leopard:&lt;/p&gt;
+
+&lt;h3 id='install_the_latest_libxml2_and_libxslt'&gt;Install the latest libxml2 and libxslt&lt;/h3&gt;
+
+&lt;p&gt;Make a source directory somewhere and do the following commands to grab the latest versions of libxml2 and libxslt:&lt;/p&gt;
+&lt;pre&gt;
+    $ curl -O ftp://xmlsoft.org/libxml2/libxml2-2.7.3.tar.gz
+    $ curl -O ftp://xmlsoft.org/libxml2/libxslt-1.1.24.tar.gz
+&lt;/pre&gt;
+&lt;p&gt;Once done, unpack both like so:&lt;/p&gt;
+&lt;pre&gt;
+    $ tar xzf libxml2-2.7.3.tar.gz
+    $ tar xzf libxslt-1.1.24.tar.gz
+&lt;/pre&gt;
+&lt;p&gt;Now change into the libxml directory and build it:&lt;/p&gt;
+&lt;pre&gt;
+    $ ./configure
+    $ make
+    $ sudo make install
+&lt;/pre&gt;
+&lt;p&gt;Now jump back to the libxslt directory and do the same:&lt;/p&gt;
+&lt;pre&gt;
+    $ cd ../libxslt-1.1.24
+    $ ./configure
+    $ make
+    $ sudo make install
+&lt;/pre&gt;
+&lt;p&gt;If you want, go ahead and delete the sources to save space. Now you&amp;#8217;re ready for the final step.&lt;/p&gt;
+
+&lt;h3 id='install_nokogiri'&gt;Install Nokogiri&lt;/h3&gt;
+
+&lt;p&gt;Now installing Nokogiri is super easy once we tell it where to link.&lt;/p&gt;
+&lt;pre&gt;
+    $ sudo gem install nokogiri -- --with-xml2-include=/usr/local/include/libxml2 --with-xml2-lib=/usr/local/lib
+&lt;/pre&gt;
+&lt;p&gt;Once you run that you are good to go.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Haml and Sass with Rails</title>

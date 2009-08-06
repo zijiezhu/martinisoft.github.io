@@ -45,12 +45,14 @@ a {
 #header h1 {
   font-size: 400%;
   margin-bottom: 5px;
+  text-shadow: 2px 2px 10px #0C0C0C;
 }
 
 #header h2 {
   font-size: 200%;
   margin: 0 0 20px 0;
   padding-top: 10px;
+  text-shadow: 2px 2px 10px #0C0C0C;
 }
 
 #nav {
