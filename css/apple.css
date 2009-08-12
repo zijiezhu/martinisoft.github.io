@@ -1,0 +1,134 @@
+/* Reset CSS
+ * Based on Eric Meyer's Reset CSS: http://meyerweb.com/eric/tools/css/reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+:focus {
+  outline: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Main Styles */
+
+/*
+  Color Palette:
+  #656565 Background
+  #000000 Text
+  #E83C5C Hot Pink
+  #A63CE8 Purple
+  #3CA0E8 Blue
+  #3CE861 Green
+  #E5E83C Yellow
+*/
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5em;
+  color: #FFF;
+  background: #656565;
+  min-height: 600px;
+}
+
+hr {
+  display: none;
+}
+
+a, a img {
+  text-decoration: none;
+  border: none;
+}
+
+a, a:link, a:visited {
+  color: #3CA0E8;
+}
+
+a:hover {
+  color: #A63CE8;
+}
+
+#wrap {
+  margin: 4em auto 0 auto;
+  width: 64em;
+  border-top: 12px solid #3CA0E8;
+  background: #0F0F0F;
+  color: #FFF;
+  padding: 1em;
+}
+
+#me {
+  display: block;
+  height: 160px;
+  width: 50em;
+  margin: 0 auto;
+}
+
+#me img {
+  float: left;
+  padding-right: 1em;
+}
+
+#me h1 {
+  font-size: 3em;
+  padding: 1em 0 0 0;
+}
+
+#me h2 {
+  font-size: 1.6em;
+  margin: 1em 0;
+}
+
+#main h2 {
+  text-align: center;
+  font-size: 3em;
+  padding: 1em 0 0 0;
+}
+
+#main h3, #github h3 {
+  font-size: 1.8em;
+  padding: 1em 0 0.4em 0;
+  color: #A8C8CF;
+}
+
+#main p {
+  font-size: 1.2em;
+  margin: 0 0 0.4em 0;
+  line-height: 1.5em;
+}
+
+#main h4 {
+  font-size: 2.4em;
+  margin: 1em 0 0 0;
+}
+
+#github {
+  margin: 1em 0 0 0;
+}
+
+#github dl {
+  padding: 0.6em 0 0 0;
+}
+
+#github dt {
+  font-size: 1.4em;
+}
+
+#github dd {
+  font-size: 1.2em;
+  padding: 0 0 0.4em 0;
+}
