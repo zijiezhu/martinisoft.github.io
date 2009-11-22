@@ -39,17 +39,62 @@
   <div id="wrap" class="group">
     <div class="main">
       <div class="entry group green">
-        <h2></h2>
-        
+        <h2>Nokogiri on Leopard</h2>
+        <p>My first experience with <a href='http://en.wikipedia.org/wiki/Regular_expression'>Regular Expressions</a> was writing whats called a <a href='http://en.wikipedia.org/wiki/Web_scraping'>web scraper</a> to fetch weather data from Weather.com. Back then, this would involve a ton of IF statements and a large array of data. Very tedious and time consuming, but it was very educational. Today, Ruby has a couple convenient libraries built for this sort of task. Even a way to mimic a browser so you can get to pages normally reserved for site members.</p>
+
+<p>After some careful research I settled on <a href='http://nokogiri.rubyforge.org/'>Nokogiri</a> because its the library of choice with <a href='http://mechanize.rubyforge.org/'>Mechanize</a>, which I use to grab data from web sites and scrape the data from them easily. Before you can really use this library on OSX Leopard, you have to jump through a few hoops.</p>
+
+<p>Mechanize may give you an error message like so:</p>
+
+<blockquote>
+<p>WARNING: Nokogiri was built against LibXML version 2.7.3, but has dynamically loaded 2.6.16 HI. You&#8217;re using libxml2 version 2.6.16 which is over 4 years old and has plenty of bugs. We suggest that for maximum HTML/XML parsing pleasure, you upgrade your version of libxml2 and re-install nokogiri. If you like using libxml2 version 2.6.16, but don&#8217;t like this warning, please define the constant I_KNOW_I_AM_USING_AN_OLD_AND_BUGGY_VERSION_OF_LIBXML2 before requring nokogiri.</p>
+</blockquote>
+
+<p>This is easy to fix, so here&#8217;s how to get rolling in Leopard:</p>
+
+<h3 id='install_the_latest_libxml2_and_libxslt'>Install the latest libxml2 and libxslt</h3>
+
+<p>Make a source directory somewhere and do the following commands to grab the latest versions of libxml2 and libxslt:</p>
+<pre>
+    $ curl -O ftp://xmlsoft.org/libxml2/libxml2-2.7.3.tar.gz
+    $ curl -O ftp://xmlsoft.org/libxml2/libxslt-1.1.24.tar.gz
+</pre>
+<p>Once done, unpack both like so:</p>
+<pre>
+    $ tar xzf libxml2-2.7.3.tar.gz
+    $ tar xzf libxslt-1.1.24.tar.gz
+</pre>
+<p>Now change into the libxml directory and build it:</p>
+<pre>
+    $ ./configure
+    $ make
+    $ sudo make install
+</pre>
+<p>Now jump back to the libxslt directory and do the same:</p>
+<pre>
+    $ cd ../libxslt-1.1.24
+    $ ./configure
+    $ make
+    $ sudo make install
+</pre>
+<p>If you want, go ahead and delete the sources to save space. Now you&#8217;re ready for the final step.</p>
+
+<h3 id='install_nokogiri'>Install Nokogiri</h3>
+
+<p>Now installing Nokogiri is super easy once we tell it where to link.</p>
+<pre>
+    $ sudo gem install nokogiri -- --with-xml2-include=/usr/local/include/libxml2 --with-xml2-lib=/usr/local/lib
+</pre>
+<p>Once you run that you are good to go.</p>
       </div>
     </div>
     <div class="secondary">
       <div class="entry-meta green">
         <h2>Post Info</h2>
         <ul>
-          <li><span>Date:</span> </li>
+          <li><span>Date:</span> 31 July 2009</li>
           <li><span>Topic:</span> Code</li>
-          <li><span>Permlink:</span> <a href="/"></a></li>
+          <li><span>Permlink:</span> </li>
         </ul>
       </div>
       <div id="contact" class="blue group">

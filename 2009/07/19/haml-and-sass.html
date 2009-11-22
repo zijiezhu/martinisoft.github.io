@@ -39,17 +39,50 @@
   <div id="wrap" class="group">
     <div class="main">
       <div class="entry group green">
-        <h2></h2>
-        
+        <h2>Haml and Sass with Rails</h2>
+        <p>Getting back into the latest Rails and installing the latest version of the greatest HTML markup system ever was a little tougher than expected. Turns out the new hotness with Rails since 2.1 is to config.gem everything, which makes sense. This doesn&#8217;t work well for things like HAML, which expect to be plugins. Luckily you can conform to the new trend without littering your vendor/plugins folder.</p>
+
+<h3 id='installing_haml_and_sass'>Installing HAML and Sass</h3>
+
+<p>You must first do a basic gem install of haml thusly:</p>
+<pre>
+    $ sudo gem install haml
+</pre>
+<p>Once completed you&#8217;ll need to add the following to your environment.rb</p>
+<pre>
+    config.gem "haml"
+</pre>
+<p>Next comes the cool trick&#8230;</p>
+
+<h3 id='the_trick'>The Trick</h3>
+
+<p>As of Rails 2.0, the default load order for configuration is as follows:</p>
+
+<ol>
+<li>config/preinitializer.rb (if the file exists)</li>
+
+<li>config/environment.rb</li>
+
+<li>config/environments/* (defaults to your current environment)</li>
+
+<li>config/initializers/*.rb</li>
+</ol>
+
+<p>You have to place the following in a new file inside the config/initializers/ folder (I called mine haml_and_sass.rb) in order to get HAML to properly load, which allows you to configure its options as well.</p>
+<pre>
+    # Init HAML
+    Haml.init_rails(binding)
+</pre>
+<p>Once you add that, SASS will work beautifully and allow you to configure it normally.</p>
       </div>
     </div>
     <div class="secondary">
       <div class="entry-meta green">
         <h2>Post Info</h2>
         <ul>
-          <li><span>Date:</span> </li>
+          <li><span>Date:</span> 19 July 2009</li>
           <li><span>Topic:</span> Code</li>
-          <li><span>Permlink:</span> <a href="/"></a></li>
+          <li><span>Permlink:</span> </li>
         </ul>
       </div>
       <div id="contact" class="blue group">
