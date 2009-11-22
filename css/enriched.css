@@ -1,0 +1,33 @@
+/* 
+Title:    CSS3 + vendor-specific styles
+Author:   Aaron Kalin
+Credit:   Dan Cederholm <dan@simplebits.com>
+Notes:
+
+-webkit	 	Safari
+-moz 	 	Firefox
+*/
+
+/* fadetastic links
+--------------------------------------------- */
+
+a:link, a:visited {
+  -webkit-transition: color .2s linear;
+  }
+
+a:hover {
+  color: rgba(55,146,179,.8);
+  }
+
+/* header punchout effect
+--------------------------------------------- */
+
+#header h1, #header h2, .main h2, .secondary h2 {
+  text-shadow: 0px 2px 3px #555;
+  }
+
+#header ul li, #header ul li a:hover {
+  border: radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  }

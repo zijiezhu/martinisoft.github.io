@@ -1,222 +1,242 @@
-/*
-  Color Palette:
-  #656565 Background
-  #000000 Text
-  #E83C5C Hot Pink
-  #A63CE8 Purple
-  #3CA0E8 Blue
-  #3CE861 Green
-  #E5E83C Yellow
+/* 
+Title:        Master styles for screen media
+Author:       Aaron Kalin
+Credit:       Dan Cederholm <dan@simplebits.com>
+Inspiration:  Massive Robot <http://massiverobot.co.uk/>
+Notes:
+
+Color Palette:
+#656565 Background
+#000000 Text
+#E83C5C Hot Pink
+#A63CE8 Purple
+#3CA0E8 Blue
+#3CE861 Green
+#E5E83C Yellow
 */
 
 body {
   margin: 0;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
-  font-size: small;
-  line-height: 1.5em;
+  font-size: 62.5%;
   color: #000;
   background: #656565;
   border-top: 12px solid #434343;
-  min-height: 600px;
-}
+  }
 
-hr {
-  display: none;
-}
+/* links */
 
-a {
+a:link, a:visited {
+  font-weight: bold;
   text-decoration: none;
-}
+  outline: none;
+  color: #3792b3;
+  }
 
-#wrapper {
+/* page structure 
+--------------------------------------------- */
+
+#wrap {
+  width: 60%;
+  max-width: 1000px;
+  min-width: 700px;
   margin: 0 auto;
-  width: 900px;
-}
+  padding: 20px 0 0 0;
+  font-size: 1.3em;
+  }
 
-#main {
+.main {
+  float: left;
+  width: 53%;
+  }
+
+.secondary {
+  float: right;
+  width: 45%;
+  }
+
+#footer {
   clear: both;
-  margin-top: 20px;
-}
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0 0 0;
+  font-size: 1em;
+  }
+
+/* header 
+--------------------------------------------- */
 
 #header {
+  position: relative;
+  width: 60%;
+  max-width: 1000px;
+  min-width: 700px;
+  margin: 0 auto;
   text-align: center;
-}
+  }
+
+#header-inner {
+  }
+
+/* logo */
 
 #header h1 {
-  font-size: 400%;
-  margin-bottom: 5px;
-  text-shadow: 2px 2px 10px #0C0C0C;
-}
+  font-size: 5em;
+  margin: 0 0 5px 0;
+  color: #222;
+  }
 
 #header h2 {
-  font-size: 200%;
-  margin: 0 0 20px 0;
-  padding-top: 10px;
-  text-shadow: 2px 2px 10px #0C0C0C;
-}
-
-#nav {
-  float: right;
-}
-
-#nav ul {
-  list-style-image: none;
-  list-style-position: outside;
-  list-style-type: none;
-}
-
-#nav ul li {
-  display: inline;
+  font-size: 3em;
   margin: 0;
-  position: relative;
-}
+  padding: 0;
+  color: #222;
+  }
 
-#nav ul li a {
-  text-decoration: none;
-  font-size: 120%;
-  color: #3CE861;
+/* navigation */
+
+#header ul {
+  margin: 10px 0 0 0;
+  }
+
+#header ul li {
+  float: left;
+  width: 10%;
+  margin: 0 15px 0 0;
   background: #0F0F0F;
-  padding: 10px 1em;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
+  }
 
-#nav ul li a:hover {
+#header ul li a {
+  display: block;
+  float: left;
+  width: 100%;
+  color: #3CE861;
+  }
+
+#header ul li a strong {
+  display: block;
+  padding: .8em 15px;
+  }
+
+#header ul li a:hover {
   color: #0F0F0F;
   background: #3CE861;
+  }
+
+
+/* main styles 
+--------------------------------------------- */
+
+#entrylist, #contact, #github, .entry, .entry-meta {
+  background: #434343;
+  padding: 8px;
 }
 
-#blog, #contact {
-  min-height: 180px;
+#contact {
+  margin: 15px 0;
 }
 
-.panel {
-  background: #0F0F0F;
-  color: #FFF;
-}
+.main h2, .secondary h2 {
+  margin: 0 0 4px 0;
+  padding: 0;
+  font-family: Georgia, serif;
+  font-size: 1.8em;
+  color: #222;
+  }
 
-.panel h2 {
-  font-size: 200%;
-  margin: 0.6em 0.4em 0 0.4em;
-}
-
-.panel p {
-  padding: 0.4em 0.8em;
-}
-
-.block {
-  float: left;
-  width: 448px;
-  margin-bottom: 5px;
-  background: #0F0F0F;
-  color: #FFF;
-}
-
-.leftblock {
-  margin-right: 4px;
-}
-
-.block h2 {
-  font-size: 180%;
-  margin: 0.2em;
-}
-
-.block h3 {
-  font-size: 98%;
-  margin: 0.2em 0.5em;
-}
+/* color */
 
 .yellow {
   border-top: 3px solid #E5E83C;
-}
+  }
 
 .yellow a {
   color: #E5E83C;
-}
+  }
 
 .blue {
   border-top: 3px solid #3CA0E8;
-}
+  }
 
 .blue a {
   color: #3CA0E8;
-}
+  }
 
 .purple {
   border-top: 3px solid #A63CE8;
-}
+  }
 
 .purple a {
   color: #A63CE8;
-}
+  }
 
 .green {
   border-top: 3px solid #3CE861;
-}
+  }
 
 .green a {
   color: #3CE861;
-}
+  }
+
+/* github */
 
 #repos {
-  margin: 0 0 6px 0;
-}
+  margin: 10px 0 0 0;
+  color: #C5C5C5;
+  }
 
 #repos dt {
-  padding: 0.5em;
+  padding: 0 0 0.5em 0;
   font-size: 116%;
-}
+  }
 
 #repos dt a {
   text-decoration: none;
-}
+  }
 
 #repos dd {
-  margin: 0.2em 0.8em;
-}
+  padding: 0 0 0.5em 0;;
+  }
 
-.tweet .tweet_list {
+/* entrylist */
+
+#entrylist ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
+  }
 
-.tweet .tweet_list li {
-  overflow: auto;
-  padding: .5em;
-}
+#entrylist ul li {
+  padding: 0.5em 0 0 0;
+  }
 
-.tweet .tweet_list .tweet_even {
-  background-color: #2F2F2F;
-}
-
-.tweet .tweet_list .tweet_avatar {
-  padding-right: .5em;
-  float: left;
-}
-
-.tweet .tweet_list .tweet_avatar img {
-  vertical-align: middle;
-}
-
-#blog ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-#blog ul li {
-  padding: 0.5em 0 0 0.5em;
-}
-
-#blog span {
+#entrylist ul li span {
   color: #C5C5C5;
-}
+  }
 
-#post h3 {
-  margin: 0.4em 0.6em;
+/* entry */
+
+div.entry h3 {
+  padding: 4px 0;
+  color: #222;
+  font-size: 1.2em;
+  }
+
+div.entry p {
   color: #C5C5C5;
-}
+  }
+
+/* entry meta info */
+
+div.entry-meta ul li {
+  color: #A2A2A2;
+  }
+
+div.entry-meta ul li span {
+  color: #C5C5C5;
+  }
+
+/* contact */
 
 #contact ul {
   list-style-type: none;
@@ -225,21 +245,37 @@ a {
 }
 
 #contact ul li {
-  padding: 0.5em 0 0 0.5em;
+  padding: 0.5em 0 0 0;
 }
 
 #contact p {
   margin: 0;
-  padding: 0.5em 0;
+  padding: 0 0 0.5em 0;
+  color: #C5C5C5;
 }
 
 #contact span {
   color: #C5C5C5;
 }
 
-#footer {
-  clear: both;
-  text-align: center;
-  padding: 30px;
-}
+/* misc. 
+--------------------------------------------- */
+
+hr, .hide {
+  display: none;
+  }
+
+a img {
+  border: none;
+  }
+
+/* self-clear floats */
+
+.group:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+  }
 

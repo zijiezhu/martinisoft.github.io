@@ -4,13 +4,27 @@
  <title>Martini Software</title>
  <link href="http://martinisoft.github.com/atom.xml" rel="self"/>
  <link href="http://martinisoft.github.com/"/>
- <updated>2009-08-12T23:15:14-04:00</updated>
+ <updated>2009-11-22T17:50:40-05:00</updated>
  <id>http://martinisoft.github.com/</id>
  <author>
    <name>Aaron Kalin</name>
    <email>akalin@martinisoftware.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Dusting off the cobwebs</title>
+   <link href="http://martinisoft.github.com//2009/11/22/dusting-off-the-cobwebs.html"/>
+   <updated>2009-11-22T00:00:00-05:00</updated>
+   <id>http://martinisoft.github.com//2009/11/22/dusting-off-the-cobwebs</id>
+   <content type="html">&lt;p&gt;Took many months, but I finally found some time to clean up and update my site design. I owe a lot of the inspiration and code to Dan Cederholm&amp;#8217;s new book &lt;a href='http://handcraftedcss.com/'&gt;Handcrafted CSS&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;My strong suit is not web design and I have always struggled with keeping up on the latest innovations in that area. Lately, I have made a conscious effort to follow leading designers and their published material. The books that stuck and got me thinking differently were the books authored by &lt;a href='http://simplebits.com/'&gt;Dan Cederholm&lt;/a&gt;. His style and explanations are simple to follow while comparing methods to a solution. This works wonderfully for a logical guy like myself where I want to know what method works for certain situations.&lt;/p&gt;
+
+&lt;p&gt;The result is the updated design you see here. I&amp;#8217;ve littered my site with credits to &lt;a href='http://simplebits.com/'&gt;Dan&lt;/a&gt; and &lt;a href='http://meyerweb.com/'&gt;Eric Meyer&lt;/a&gt; to give props to these design gurus. If you&amp;#8217;re wondering where I got the palette and design ideas, it was inspired by Dan Webb&amp;#8217;s new outfit &lt;a href='http://massiverobot.co.uk/'&gt;Massive Robot&lt;/a&gt;. You could call me an imitator, but I&amp;#8217;m happy to give credit where it is due.&lt;/p&gt;
+
+&lt;p&gt;Still more work to do, but this was a major milestone for me and giving me things to think about for next year. I am moving to Tampa next month so the next entry may come after the new year when I am settled into my new apartment.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Nokogiri on Leopard</title>
