@@ -11,19 +11,6 @@ $(document).ready(function() {
     });
   });
 
-  $(".tweet").tweet({
-      username: "martinisoft",
-      join_text: "auto",
-      avatar_size: 32,
-      count: 5,
-      auto_join_text_default: "", 
-      auto_join_text_ed: "",
-      auto_join_text_ing: "",
-      auto_join_text_reply: "",
-      auto_join_text_url: "",
-      loading_text: ""
-  });
-
   function getRepos(username, callback) {
     $.getJSON('http://github.com/api/v1/json/'+username+'?callback=?', function(data) {
       var repos = data.user.repositories;
