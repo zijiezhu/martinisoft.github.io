@@ -1,6 +1,6 @@
 # This is the data repo for martinisoftware.com
 
-Everything in the _source directory is transformed from markdown and liquid templates into delicious XHTML/CSS by [Jekyll]:http://github.com/mojombo/jekyll
+Everything in the _source directory is transformed from markdown and liquid templates into delicious XHTML/CSS by [Jekyll](http://github.com/mojombo/jekyll)
 
 # License
 
