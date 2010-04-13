@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Martini Software</title>
- <link href="http://martinisoft.github.com/atom.xml" rel="self"/>
- <link href="http://martinisoft.github.com/"/>
- <updated>2009-11-22T19:34:42-05:00</updated>
- <id>http://martinisoft.github.com/</id>
+ <link href="http://martinisoftware.com/atom.xml" rel="self"/>
+ <link href="http://martinisoftware.com/"/>
+ <updated>2010-04-13T00:22:52-04:00</updated>
+ <id>http://martinisoftware.com/</id>
  <author>
    <name>Aaron Kalin</name>
    <email>akalin@martinisoftware.com</email>
@@ -13,153 +13,224 @@
 
  
  <entry>
+   <title>Adventures in automation</title>
+   <link href="http://martinisoftware.com//2010/04/12/adventures-in-automation.html"/>
+   <updated>2010-04-12T00:00:00-04:00</updated>
+   <id>http://martinisoftware.com//2010/04/12/adventures-in-automation</id>
+   <content type="html">&lt;p&gt;Been a little while since my last post here.  A short explanation of the last 4 months in bullet point format:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Moved to Tampa&lt;/li&gt;
+&lt;li&gt;Turned 25&lt;/li&gt;
+&lt;li&gt;Overtime at work&lt;/li&gt;
+&lt;li&gt;Studying for the CCNA and A+ exams&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Time was a precious commodity the past few months and I finally got a chance to breathe, collect myself and write a new post.  While trying to write this post, I managed to update some of the code running this blog to help automate posting and updating of my resume.&lt;/p&gt;
+
+&lt;p&gt;The one feature that I spent far too much time researching was converting my resume to pdf automatically when I publish a change.  I honestly don't update it that much, but I thought it would be an easy task to generate it once I updated it with some new information.  So my search began for a markdown to pdf tool. Ultimately I went with wkhtmltopdf, but I'll give some reasoning why I did not choose the other projects I found.&lt;/p&gt;
+
+&lt;h4&gt;&lt;a href=&quot;http://www.htmldoc.org/&quot;&gt;HTMLDoc&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Ultimately did not respect any CSS, so my pdf was this lifeless, unformatted page that looked like something out of the mid 90s.&lt;/p&gt;
+
+&lt;h4&gt;&lt;a href=&quot;http://www.princexml.com/&quot;&gt;Prince&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Very nice tool, the free one watermarks your pdf files and the &quot;professional&quot; license is nearly $500.  Would be nice to use for a commercial CMS where dynamic PDF download is needed.&lt;/p&gt;
+
+&lt;h4&gt;&lt;a href=&quot;https://xhtmlrenderer.dev.java.net/&quot;&gt;Flying Saucer&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Written in Java, so it was a bit complicated to setup, but could be called via JRuby.  Did not feel like respecting the print stylesheet either.&lt;/p&gt;
+
+&lt;h4&gt;&lt;a href=&quot;http://code.google.com/p/wkhtmltopdf/&quot;&gt;wkhtmltopdf&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Someone came up with the brilliant idea of making a command line wrapper around Qt's implementation of WebKit (the Safari browsing engine) purely for making PDFs out of HTML pages.  It worked flawlessly, except on my Snow Leopard mac when I feed it the option to load the print style.  I was forced to run this on an Ubuntu system I manage at home.&lt;/p&gt;
+
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;I may make a second part to this post about the automation I've done on this blog, but for now you can take a peek at the commented code in the &lt;a href=&quot;http://github.com/martinisoft/martinisoft.github.com/blob/master/Rakefile&quot;&gt;Rakefile&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Dusting off the cobwebs</title>
-   <link href="http://martinisoft.github.com//2009/11/22/dusting-off-the-cobwebs.html"/>
+   <link href="http://martinisoftware.com//2009/11/22/dusting-off-the-cobwebs.html"/>
    <updated>2009-11-22T00:00:00-05:00</updated>
-   <id>http://martinisoft.github.com//2009/11/22/dusting-off-the-cobwebs</id>
-   <content type="html">&lt;p&gt;Took many months, but I finally found some time to clean up and update my site design. I owe a lot of the inspiration and code to Dan Cederholm&amp;#8217;s new book &lt;a href='http://handcraftedcss.com/'&gt;Handcrafted CSS&lt;/a&gt;.&lt;/p&gt;
+   <id>http://martinisoftware.com//2009/11/22/dusting-off-the-cobwebs</id>
+   <content type="html">&lt;p&gt;Took many months, but I finally found some time to clean up and update my site design.  I owe a lot of the inspiration and code to Dan Cederholm's new book &lt;a href=&quot;http://handcraftedcss.com/&quot;&gt;Handcrafted CSS&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;My strong suit is not web design and I have always struggled with keeping up on the latest innovations in that area. Lately, I have made a conscious effort to follow leading designers and their published material. The books that stuck and got me thinking differently were the books authored by &lt;a href='http://simplebits.com/'&gt;Dan Cederholm&lt;/a&gt;. His style and explanations are simple to follow while comparing methods to a solution. This works wonderfully for a logical guy like myself where I want to know what method works for certain situations.&lt;/p&gt;
+&lt;p&gt;My strong suit is not web design and I have always struggled with keeping up on the latest innovations in that area.  Lately, I have made a conscious effort to follow leading designers and their published material.  The books that stuck and got me thinking differently were the books authored by &lt;a href=&quot;http://simplebits.com/&quot;&gt;Dan Cederholm&lt;/a&gt;.  His style and explanations are simple to follow while comparing methods to a solution.  This works wonderfully for a logical guy like myself where I want to know what method works for certain situations.&lt;/p&gt;
 
-&lt;p&gt;The result is the updated design you see here. I&amp;#8217;ve littered my site with credits to &lt;a href='http://simplebits.com/'&gt;Dan&lt;/a&gt; and &lt;a href='http://meyerweb.com/'&gt;Eric Meyer&lt;/a&gt; to give props to these design gurus. If you&amp;#8217;re wondering where I got the palette and design ideas, it was inspired by Dan Webb&amp;#8217;s new outfit &lt;a href='http://massiverobot.co.uk/'&gt;Massive Robot&lt;/a&gt;. You could call me an imitator, but I&amp;#8217;m happy to give credit where it is due.&lt;/p&gt;
+&lt;p&gt;The result is the updated design you see here.  I've littered my site with credits to &lt;a href=&quot;http://simplebits.com/&quot;&gt;Dan&lt;/a&gt; and &lt;a href=&quot;http://meyerweb.com/&quot;&gt;Eric Meyer&lt;/a&gt; to give props to these design gurus.  If you're wondering where I got the palette and design ideas, it was inspired by Dan Webb's new outfit &lt;a href=&quot;http://massiverobot.co.uk/&quot;&gt;Massive Robot&lt;/a&gt;.  You could call me an imitator, but I'm happy to give credit where it is due.&lt;/p&gt;
 
-&lt;p&gt;Still more work to do, but this was a major milestone for me and giving me things to think about for next year. I am moving to Tampa next month so the next entry may come after the new year when I am settled into my new apartment.&lt;/p&gt;</content>
+&lt;p&gt;Still more work to do, but this was a major milestone for me and giving me things to think about for next year.  I am moving to Tampa next month so the next entry may come after the new year when I am settled into my new apartment.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
    <title>Nokogiri on Leopard</title>
-   <link href="http://martinisoft.github.com//2009/07/31/nokogiri-on-leopard.html"/>
+   <link href="http://martinisoftware.com//2009/07/31/nokogiri-on-leopard.html"/>
    <updated>2009-07-31T00:00:00-04:00</updated>
-   <id>http://martinisoft.github.com//2009/07/31/nokogiri-on-leopard</id>
-   <content type="html">&lt;p&gt;My first experience with &lt;a href='http://en.wikipedia.org/wiki/Regular_expression'&gt;Regular Expressions&lt;/a&gt; was writing whats called a &lt;a href='http://en.wikipedia.org/wiki/Web_scraping'&gt;web scraper&lt;/a&gt; to fetch weather data from Weather.com. Back then, this would involve a ton of IF statements and a large array of data. Very tedious and time consuming, but it was very educational. Today, Ruby has a couple convenient libraries built for this sort of task. Even a way to mimic a browser so you can get to pages normally reserved for site members.&lt;/p&gt;
+   <id>http://martinisoftware.com//2009/07/31/nokogiri-on-leopard</id>
+   <content type="html">&lt;p&gt;My first experience with &lt;a href=&quot;http://en.wikipedia.org/wiki/Regular_expression&quot;&gt;Regular Expressions&lt;/a&gt; was writing whats called a &lt;a href=&quot;http://en.wikipedia.org/wiki/Web_scraping&quot;&gt;web scraper&lt;/a&gt; to fetch weather data from Weather.com.  Back then, this would involve a ton of IF statements and a large array of data.  Very tedious and time consuming, but it was very educational.  Today, Ruby has a couple convenient libraries built for this sort of task.  Even a way to mimic a browser so you can get to pages normally reserved for site members.&lt;/p&gt;
 
-&lt;p&gt;After some careful research I settled on &lt;a href='http://nokogiri.rubyforge.org/'&gt;Nokogiri&lt;/a&gt; because its the library of choice with &lt;a href='http://mechanize.rubyforge.org/'&gt;Mechanize&lt;/a&gt;, which I use to grab data from web sites and scrape the data from them easily. Before you can really use this library on OSX Leopard, you have to jump through a few hoops.&lt;/p&gt;
+&lt;p&gt;After some careful research I settled on &lt;a href=&quot;http://nokogiri.rubyforge.org/&quot;&gt;Nokogiri&lt;/a&gt; because its the library of choice with &lt;a href=&quot;http://mechanize.rubyforge.org/&quot;&gt;Mechanize&lt;/a&gt;, which I use to grab data from web sites and scrape the data from them easily.  Before you can really use this library on OSX Leopard, you have to jump through a few hoops.&lt;/p&gt;
 
 &lt;p&gt;Mechanize may give you an error message like so:&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;WARNING: Nokogiri was built against LibXML version 2.7.3, but has dynamically loaded 2.6.16 HI. You&amp;#8217;re using libxml2 version 2.6.16 which is over 4 years old and has plenty of bugs. We suggest that for maximum HTML/XML parsing pleasure, you upgrade your version of libxml2 and re-install nokogiri. If you like using libxml2 version 2.6.16, but don&amp;#8217;t like this warning, please define the constant I_KNOW_I_AM_USING_AN_OLD_AND_BUGGY_VERSION_OF_LIBXML2 before requring nokogiri.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;p&gt;WARNING: Nokogiri was built against LibXML version 2.7.3, but has dynamically loaded 2.6.16
+HI.  You're using libxml2 version 2.6.16 which is over 4 years old and has
+plenty of bugs.  We suggest that for maximum HTML/XML parsing pleasure, you
+upgrade your version of libxml2 and re-install nokogiri.  If you like using
+libxml2 version 2.6.16, but don't like this warning, please define the constant
+I_KNOW_I_AM_USING_AN_OLD_AND_BUGGY_VERSION_OF_LIBXML2 before requring nokogiri.&lt;/p&gt;&lt;/blockquote&gt;
 
-&lt;p&gt;This is easy to fix, so here&amp;#8217;s how to get rolling in Leopard:&lt;/p&gt;
+&lt;p&gt;This is easy to fix, so here's how to get rolling in Leopard:&lt;/p&gt;
 
-&lt;h3 id='install_the_latest_libxml2_and_libxslt'&gt;Install the latest libxml2 and libxslt&lt;/h3&gt;
+&lt;h3&gt;Install the latest libxml2 and libxslt&lt;/h3&gt;
 
 &lt;p&gt;Make a source directory somewhere and do the following commands to grab the latest versions of libxml2 and libxslt:&lt;/p&gt;
+
 &lt;pre&gt;
     $ curl -O ftp://xmlsoft.org/libxml2/libxml2-2.7.3.tar.gz
     $ curl -O ftp://xmlsoft.org/libxml2/libxslt-1.1.24.tar.gz
 &lt;/pre&gt;
+
+
 &lt;p&gt;Once done, unpack both like so:&lt;/p&gt;
+
 &lt;pre&gt;
     $ tar xzf libxml2-2.7.3.tar.gz
     $ tar xzf libxslt-1.1.24.tar.gz
 &lt;/pre&gt;
+
+
 &lt;p&gt;Now change into the libxml directory and build it:&lt;/p&gt;
+
 &lt;pre&gt;
     $ ./configure
     $ make
     $ sudo make install
 &lt;/pre&gt;
+
+
 &lt;p&gt;Now jump back to the libxslt directory and do the same:&lt;/p&gt;
+
 &lt;pre&gt;
     $ cd ../libxslt-1.1.24
     $ ./configure
     $ make
     $ sudo make install
 &lt;/pre&gt;
-&lt;p&gt;If you want, go ahead and delete the sources to save space. Now you&amp;#8217;re ready for the final step.&lt;/p&gt;
 
-&lt;h3 id='install_nokogiri'&gt;Install Nokogiri&lt;/h3&gt;
+
+&lt;p&gt;If you want, go ahead and delete the sources to save space. Now you're ready for the final step.&lt;/p&gt;
+
+&lt;h3&gt;Install Nokogiri&lt;/h3&gt;
 
 &lt;p&gt;Now installing Nokogiri is super easy once we tell it where to link.&lt;/p&gt;
+
 &lt;pre&gt;
     $ sudo gem install nokogiri -- --with-xml2-include=/usr/local/include/libxml2 --with-xml2-lib=/usr/local/lib
 &lt;/pre&gt;
-&lt;p&gt;Once you run that you are good to go.&lt;/p&gt;</content>
+
+
+&lt;p&gt;Once you run that you are good to go.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
    <title>Haml and Sass with Rails</title>
-   <link href="http://martinisoft.github.com//2009/07/19/haml-and-sass.html"/>
+   <link href="http://martinisoftware.com//2009/07/19/haml-and-sass.html"/>
    <updated>2009-07-19T00:00:00-04:00</updated>
-   <id>http://martinisoft.github.com//2009/07/19/haml-and-sass</id>
-   <content type="html">&lt;p&gt;Getting back into the latest Rails and installing the latest version of the greatest HTML markup system ever was a little tougher than expected. Turns out the new hotness with Rails since 2.1 is to config.gem everything, which makes sense. This doesn&amp;#8217;t work well for things like HAML, which expect to be plugins. Luckily you can conform to the new trend without littering your vendor/plugins folder.&lt;/p&gt;
+   <id>http://martinisoftware.com//2009/07/19/haml-and-sass</id>
+   <content type="html">&lt;p&gt;Getting back into the latest Rails and installing the latest version of the greatest HTML markup system ever was a little tougher than expected.  Turns out the new hotness with Rails since 2.1 is to config.gem everything, which makes sense.  This doesn't work well for things like HAML, which expect to be plugins.  Luckily you can conform to the new trend without littering your vendor/plugins folder.&lt;/p&gt;
 
-&lt;h3 id='installing_haml_and_sass'&gt;Installing HAML and Sass&lt;/h3&gt;
+&lt;h3&gt;Installing HAML and Sass&lt;/h3&gt;
 
 &lt;p&gt;You must first do a basic gem install of haml thusly:&lt;/p&gt;
+
 &lt;pre&gt;
     $ sudo gem install haml
 &lt;/pre&gt;
-&lt;p&gt;Once completed you&amp;#8217;ll need to add the following to your environment.rb&lt;/p&gt;
+
+
+&lt;p&gt;Once completed you'll need to add the following to your environment.rb&lt;/p&gt;
+
 &lt;pre&gt;
     config.gem &quot;haml&quot;
 &lt;/pre&gt;
-&lt;p&gt;Next comes the cool trick&amp;#8230;&lt;/p&gt;
 
-&lt;h3 id='the_trick'&gt;The Trick&lt;/h3&gt;
+
+&lt;p&gt;Next comes the cool trick...&lt;/p&gt;
+
+&lt;h3&gt;The Trick&lt;/h3&gt;
 
 &lt;p&gt;As of Rails 2.0, the default load order for configuration is as follows:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;config/preinitializer.rb (if the file exists)&lt;/li&gt;
-
 &lt;li&gt;config/environment.rb&lt;/li&gt;
-
 &lt;li&gt;config/environments/* (defaults to your current environment)&lt;/li&gt;
-
 &lt;li&gt;config/initializers/*.rb&lt;/li&gt;
 &lt;/ol&gt;
 
+
 &lt;p&gt;You have to place the following in a new file inside the config/initializers/ folder (I called mine haml_and_sass.rb) in order to get HAML to properly load, which allows you to configure its options as well.&lt;/p&gt;
-&lt;pre&gt;
-    # Init HAML
-    Haml.init_rails(binding)
-&lt;/pre&gt;
-&lt;p&gt;Once you add that, SASS will work beautifully and allow you to configure it normally.&lt;/p&gt;</content>
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;    &lt;span class=&quot;c1&quot;&gt;# Init HAML&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;Haml&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init_rails&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;binding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Once you add that, SASS will work beautifully and allow you to configure it normally.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
    <title>Adventures in Makefiles</title>
-   <link href="http://martinisoft.github.com//2009/06/18/adventures-in-makefiles.html"/>
+   <link href="http://martinisoftware.com//2009/06/18/adventures-in-makefiles.html"/>
    <updated>2009-06-18T00:00:00-04:00</updated>
-   <id>http://martinisoft.github.com//2009/06/18/adventures-in-makefiles</id>
-   <content type="html">&lt;p&gt;Writing Makefiles is painful. Especially in multiple platforms. Check out the source code to any C or C++ based application to see what I mean. You&amp;#8217;ll quickly lose your sanity wrapping your brain around the syntax, scope and depth of these files. Thankfully there are tools out there to make this job much easier, but which one? I chose Premake.&lt;/p&gt;
+   <id>http://martinisoftware.com//2009/06/18/adventures-in-makefiles</id>
+   <content type="html">&lt;p&gt;Writing Makefiles is painful.  Especially in multiple platforms.  Check out the source code to any C or C++ based application to see what I mean.  You'll quickly lose your sanity wrapping your brain around the syntax, scope and depth of these files.  Thankfully there are tools out there to make this job much easier, but which one?  I chose Premake.&lt;/p&gt;
 
-&lt;h3 id='looking_around'&gt;Looking Around&lt;/h3&gt;
+&lt;h3&gt;Looking Around&lt;/h3&gt;
 
-&lt;p&gt;Initially I gave CMake and Scons a good run for the money. You&amp;#8217;ll see my struggle with this issue in Listbotto. Going back and forth, editing and referencing documentation. After nearly two full days I finally got a working compile, but at what cost? Nearly two full days I could have been writing code! My search for a proper tool finally landed me at the doorstep of &lt;a href='http://industriousone.com/premake'&gt;Premake&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Initially I gave CMake and Scons a good run for the money.  You'll see my struggle with this issue in Listbotto.  Going back and forth, editing and referencing documentation.  After nearly two full days I finally got a working compile, but at what cost?  Nearly two full days I could have been writing code!  My search for a proper tool finally landed me at the doorstep of &lt;a href=&quot;http://industriousone.com/premake&quot;&gt;Premake&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Premake is written in C and LUA by &lt;a href='http://sourceforge.net/project/memberlist.php?group_id=71616'&gt;3 people&lt;/a&gt;. LUA is an embeddable scripting language that has been around for years. It&amp;#8217;s also been used in projects like &lt;a href='http://www.garrysmod.com/'&gt;Garry&amp;#8217;s Mod&lt;/a&gt; and &lt;a href='http://www.farcrygame.com/'&gt;FarCry&lt;/a&gt;. There is beauty in both its simplicity and power as a language because you can extend the features. You&amp;#8217;ll also find lots of support, books, documentation, and help from various communities that use the language, which is a plus.&lt;/p&gt;
+&lt;p&gt;Premake is written in C and LUA by &lt;a href=&quot;http://sourceforge.net/project/memberlist.php?group_id=71616&quot;&gt;3 people&lt;/a&gt;. LUA is an embeddable scripting language that has been around for years.  It's also been used in projects like &lt;a href=&quot;http://www.garrysmod.com/&quot;&gt;Garry's Mod&lt;/a&gt; and &lt;a href=&quot;http://www.farcrygame.com/&quot;&gt;FarCry&lt;/a&gt;.  There is beauty in both its simplicity and power as a language because you can extend the features.  You'll also find lots of support, books, documentation, and help from various communities that use the language, which is a plus.&lt;/p&gt;
 
-&lt;h3 id='switching_to_premake'&gt;Switching To Premake&lt;/h3&gt;
+&lt;h3&gt;Switching To Premake&lt;/h3&gt;
 
-&lt;p&gt;After making the decision on Premake, switching was amazingly easy. This was partly because the site has some recipes to get you started. After adding all the directories I finally got a compile to happen in 10 minutes. I think the neighbors might have heard my cries of joy.&lt;/p&gt;
+&lt;p&gt;After making the decision on Premake, switching was amazingly easy.  This was partly because the site has some recipes to get you started.  After adding all the directories I finally got a compile to happen in 10 minutes.  I think the neighbors might have heard my cries of joy.&lt;/p&gt;
 
-&lt;p&gt;Soon after the switch I had other libraries added in, compiling, working. I was personally relieved to not only put the whole build tools issue behind me, but to finally look at my code again. I honestly compare this to how Ruby on Rails takes a lot of the pain away with web application development. Much of the heavy lifting is done, just write code!&lt;/p&gt;
+&lt;p&gt;Soon after the switch I had other libraries added in, compiling, working.  I was personally relieved to not only put the whole build tools issue behind me, but to finally look at my code again.  I honestly compare this to how Ruby on Rails takes a lot of the pain away with web application development.  Much of the heavy lifting is done, just write code!&lt;/p&gt;
 
-&lt;p&gt;It wasn&amp;#8217;t all sparkles and fun though because there are some drawbacks to me choosing this system, but I can live with them for the time being.&lt;/p&gt;
+&lt;p&gt;It wasn't all sparkles and fun though because there are some drawbacks to me choosing this system, but I can live with them for the time being.&lt;/p&gt;
 
-&lt;h3 id='it_wasnt_all_perfect'&gt;It Wasn&amp;#8217;t All Perfect&lt;/h3&gt;
+&lt;h3&gt;It Wasn't All Perfect&lt;/h3&gt;
 
-&lt;p&gt;Premake (as of 4.0) does not have a way to generate projects for XCode, though it is planned for 4.1 and 4.2. If you compare it to tools like CMake, you honestly won&amp;#8217;t get the control you&amp;#8217;re seeking, but you can add it if needed. I also found a gotcha with the syntax, but it was quickly figured out and I&amp;#8217;ll be submitting some patches soon.&lt;/p&gt;
+&lt;p&gt;Premake (as of 4.0) does not have a way to generate projects for XCode, though it is planned for 4.1 and 4.2.  If you compare it to tools like CMake, you honestly won't get the control you're seeking, but you can add it if needed.  I also found a gotcha with the syntax, but it was quickly figured out and I'll be submitting some patches soon.&lt;/p&gt;
 
-&lt;h3 id='final_thoughts'&gt;Final Thoughts&lt;/h3&gt;
+&lt;h3&gt;Final Thoughts&lt;/h3&gt;
 
-&lt;p&gt;This post is not meant to start a flame war about which build tool is better. I firmly believe each serves a great purpose based on what you need. It took many years for the KDevelop project to switch from Make to CMake. They even tried SCons, but found CMake to be what the doctor ordered. Some people I know swear by SCons, while others say CMake is amazing. It&amp;#8217;s all very simple, pick the tool for the job you need and one you&amp;#8217;ll love to use.&lt;/p&gt;
+&lt;p&gt;This post is not meant to start a flame war about which build tool is better.  I firmly believe each serves a great purpose based on what you need.  It took many years for the KDevelop project to switch from Make to CMake.  They even tried SCons, but found CMake to be what the doctor ordered.  Some people I know swear by SCons, while others say CMake is amazing. It's all very simple, pick the tool for the job you need and one you'll love to use.&lt;/p&gt;
 
-&lt;p&gt;Premake was a joy to work with in comparison to the others I tried, which is why it stuck. Your mileage may vary of course. Now I need to get back to coding.&lt;/p&gt;</content>
+&lt;p&gt;Premake was a joy to work with in comparison to the others I tried, which is why it stuck.  Your mileage may vary of course.  Now I need to get back to coding.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
    <title>Welcome to 'Martini Software'</title>
-   <link href="http://martinisoft.github.com//2009/05/23/first-post.html"/>
+   <link href="http://martinisoftware.com//2009/05/23/first-post.html"/>
    <updated>2009-05-23T00:00:00-04:00</updated>
-   <id>http://martinisoft.github.com//2009/05/23/first-post</id>
-   <content type="html">&lt;p&gt;Whew! After many years of on and off editing, I finally built a site that I love to call home. Big thanks to the folks at Github for adding this feature to their service. Seems that every time I look at the site, there is a new feature.&lt;/p&gt;
+   <id>http://martinisoftware.com//2009/05/23/first-post</id>
+   <content type="html">&lt;p&gt;Whew! After many years of on and off editing, I finally built a site that I love to call home.  Big thanks to the folks at Github for adding this feature to their service.  Seems that every time I look at the site, there is a new feature.&lt;/p&gt;
 
-&lt;p&gt;Now my plans are to post at least once per month with topics about programming and other geeky stuff. I&amp;#8217;ll be making my first real post in the next couple of weeks.&lt;/p&gt;</content>
+&lt;p&gt;Now my plans are to post at least once per month with topics about programming and other geeky stuff.  I'll be making my first real post in the next couple of weeks.&lt;/p&gt;
+</content>
  </entry>
  
  

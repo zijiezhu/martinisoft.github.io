@@ -40,8 +40,8 @@
         <h2>Post Info</h2>
         <ul>
           <li><span>Date:</span> {{ page.date | date_to_long_string }}</li>
-          <li><span>Topic:</span> Code</li>
-          <li><span>Permlink:</span> {{ page.location }}</li>
+          <li><span>Topic:</span> {{ page.topic }}</li>
+          <li><span>Permlink:</span> <a href="http://martinisoftware.com{{ page.url }}">{{ page.url }}</li>
         </ul>
       </div>
       <div id="contact" class="blue group">

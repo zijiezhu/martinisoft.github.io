@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dusting off the cobwebs
+topic: Misc
 ---
 
 Took many months, but I finally found some time to clean up and update my site design.  I owe a lot of the inspiration and code to Dan Cederholm's new book [Handcrafted CSS](http://handcraftedcss.com/). 

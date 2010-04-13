@@ -32,9 +32,9 @@ As of Rails 2.0, the default load order for configuration is as follows:
 
 You have to place the following in a new file inside the config/initializers/ folder (I called mine haml_and_sass.rb) in order to get HAML to properly load, which allows you to configure its options as well.
 
-<pre>
+{% highlight ruby %}
     # Init HAML
     Haml.init_rails(binding)
-</pre>
+{% endhighlight %}
 
 Once you add that, SASS will work beautifully and allow you to configure it normally.

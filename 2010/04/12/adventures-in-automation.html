@@ -3,7 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>Haml and Sass with Rails</title>
+  <title>Adventures in automation</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
   <link rel="stylesheet" type="text/css" media="screen, projection" href="/css/screen.css" />
@@ -40,48 +40,40 @@
   <div id="wrap" class="group">
     <div class="main">
       <div class="entry group green">
-        <h2>Haml and Sass with Rails</h2>
-        <p>Getting back into the latest Rails and installing the latest version of the greatest HTML markup system ever was a little tougher than expected.  Turns out the new hotness with Rails since 2.1 is to config.gem everything, which makes sense.  This doesn't work well for things like HAML, which expect to be plugins.  Luckily you can conform to the new trend without littering your vendor/plugins folder.</p>
+        <h2>Adventures in automation</h2>
+        <p>Been a little while since my last post here.  A short explanation of the last 4 months in bullet point format:</p>
 
-<h3>Installing HAML and Sass</h3>
-
-<p>You must first do a basic gem install of haml thusly:</p>
-
-<pre>
-    $ sudo gem install haml
-</pre>
-
-
-<p>Once completed you'll need to add the following to your environment.rb</p>
-
-<pre>
-    config.gem "haml"
-</pre>
+<ul>
+<li>Moved to Tampa</li>
+<li>Turned 25</li>
+<li>Overtime at work</li>
+<li>Studying for the CCNA and A+ exams</li>
+</ul>
 
 
-<p>Next comes the cool trick...</p>
+<p>Time was a precious commodity the past few months and I finally got a chance to breathe, collect myself and write a new post.  While trying to write this post, I managed to update some of the code running this blog to help automate posting and updating of my resume.</p>
 
-<h3>The Trick</h3>
+<p>The one feature that I spent far too much time researching was converting my resume to pdf automatically when I publish a change.  I honestly don't update it that much, but I thought it would be an easy task to generate it once I updated it with some new information.  So my search began for a markdown to pdf tool. Ultimately I went with wkhtmltopdf, but I'll give some reasoning why I did not choose the other projects I found.</p>
 
-<p>As of Rails 2.0, the default load order for configuration is as follows:</p>
+<h4><a href="http://www.htmldoc.org/">HTMLDoc</a></h4>
 
-<ol>
-<li>config/preinitializer.rb (if the file exists)</li>
-<li>config/environment.rb</li>
-<li>config/environments/* (defaults to your current environment)</li>
-<li>config/initializers/*.rb</li>
-</ol>
+<p>Ultimately did not respect any CSS, so my pdf was this lifeless, unformatted page that looked like something out of the mid 90s.</p>
 
+<h4><a href="http://www.princexml.com/">Prince</a></h4>
 
-<p>You have to place the following in a new file inside the config/initializers/ folder (I called mine haml_and_sass.rb) in order to get HAML to properly load, which allows you to configure its options as well.</p>
+<p>Very nice tool, the free one watermarks your pdf files and the "professional" license is nearly $500.  Would be nice to use for a commercial CMS where dynamic PDF download is needed.</p>
 
-<div class="highlight"><pre><code class="ruby">    <span class="c1"># Init HAML</span>
-    <span class="no">Haml</span><span class="o">.</span><span class="n">init_rails</span><span class="p">(</span><span class="nb">binding</span><span class="p">)</span>
-</code></pre>
-</div>
+<h4><a href="https://xhtmlrenderer.dev.java.net/">Flying Saucer</a></h4>
 
+<p>Written in Java, so it was a bit complicated to setup, but could be called via JRuby.  Did not feel like respecting the print stylesheet either.</p>
 
-<p>Once you add that, SASS will work beautifully and allow you to configure it normally.</p>
+<h4><a href="http://code.google.com/p/wkhtmltopdf/">wkhtmltopdf</a></h4>
+
+<p>Someone came up with the brilliant idea of making a command line wrapper around Qt's implementation of WebKit (the Safari browsing engine) purely for making PDFs out of HTML pages.  It worked flawlessly, except on my Snow Leopard mac when I feed it the option to load the print style.  I was forced to run this on an Ubuntu system I manage at home.</p>
+
+<h3>Conclusion</h3>
+
+<p>I may make a second part to this post about the automation I've done on this blog, but for now you can take a peek at the commented code in the <a href="http://github.com/martinisoft/martinisoft.github.com/blob/master/Rakefile">Rakefile</a></p>
 
       </div>
     </div>
@@ -89,9 +81,9 @@
       <div class="entry-meta green">
         <h2>Post Info</h2>
         <ul>
-          <li><span>Date:</span> 19 July 2009</li>
-          <li><span>Topic:</span> </li>
-          <li><span>Permlink:</span> <a href="http://martinisoftware.com/2009/07/19/haml-and-sass.html">/2009/07/19/haml-and-sass.html</li>
+          <li><span>Date:</span> 12 April 2010</li>
+          <li><span>Topic:</span> Code</li>
+          <li><span>Permlink:</span> <a href="http://martinisoftware.com/2010/04/12/adventures-in-automation.html">/2010/04/12/adventures-in-automation.html</li>
         </ul>
       </div>
       <div id="contact" class="blue group">

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Nokogiri on Leopard
+topic: Code
 ---
 
 My first experience with [Regular Expressions](http://en.wikipedia.org/wiki/Regular_expression) was writing whats called a [web scraper](http://en.wikipedia.org/wiki/Web_scraping) to fetch weather data from Weather.com.  Back then, this would involve a ton of IF statements and a large array of data.  Very tedious and time consuming, but it was very educational.  Today, Ruby has a couple convenient libraries built for this sort of task.  Even a way to mimic a browser so you can get to pages normally reserved for site members.

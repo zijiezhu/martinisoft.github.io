@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Adventures in Makefiles
+topic: Code
 ---
 
 Writing Makefiles is painful.  Especially in multiple platforms.  Check out the source code to any C or C++ based application to see what I mean.  You'll quickly lose your sanity wrapping your brain around the syntax, scope and depth of these files.  Thankfully there are tools out there to make this job much easier, but which one?  I chose Premake.
