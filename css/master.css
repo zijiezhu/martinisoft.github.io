@@ -216,15 +216,32 @@ a:link, a:visited {
 
 /* entry */
 
+div.entry {
+  color: #C5C5C5;
+  }
+
 div.entry h3 {
   padding: 4px 0;
   color: #222;
   font-size: 1.2em;
   }
 
+div.entry h4 {
+  padding: 4px 0;
+  color: #222;
+  }
+
 div.entry p {
   padding: 4px 0;
-  color: #C5C5C5;
+  }
+
+div.entry ul {
+  padding: 0 0 0 0.5em;
+  margin: 0 0 0 2em;
+  }
+
+div.entry ul li {
+  list-style-type: disc;
   }
 
 /* entry meta info */
