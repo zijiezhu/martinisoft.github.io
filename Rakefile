@@ -3,7 +3,7 @@ require 'htmldoc'
 
 desc "Update Site"
 task :update do
-  sh "jekyll"
+  sh "jekyll --no-auto"
 end
 
 # Still a work in progress
