@@ -1,0 +1,7 @@
+title: Martini Software
+auto: false
+pygments: true
+markdown: rdiscount
+exclude: [Rakefile]
+destination: .
+source: ./_source

@@ -41,31 +41,32 @@
     <div class="main">
       <div class="entry group green">
         <h2>Adventures in Makefiles</h2>
-        <p>Writing Makefiles is painful. Especially in multiple platforms. Check out the source code to any C or C++ based application to see what I mean. You&#8217;ll quickly lose your sanity wrapping your brain around the syntax, scope and depth of these files. Thankfully there are tools out there to make this job much easier, but which one? I chose Premake.</p>
+        <p>Writing Makefiles is painful.  Especially in multiple platforms.  Check out the source code to any C or C++ based application to see what I mean.  You'll quickly lose your sanity wrapping your brain around the syntax, scope and depth of these files.  Thankfully there are tools out there to make this job much easier, but which one?  I chose Premake.</p>
 
-<h3 id='looking_around'>Looking Around</h3>
+<h3>Looking Around</h3>
 
-<p>Initially I gave CMake and Scons a good run for the money. You&#8217;ll see my struggle with this issue in Listbotto. Going back and forth, editing and referencing documentation. After nearly two full days I finally got a working compile, but at what cost? Nearly two full days I could have been writing code! My search for a proper tool finally landed me at the doorstep of <a href='http://industriousone.com/premake'>Premake</a>.</p>
+<p>Initially I gave CMake and Scons a good run for the money.  You'll see my struggle with this issue in Listbotto.  Going back and forth, editing and referencing documentation.  After nearly two full days I finally got a working compile, but at what cost?  Nearly two full days I could have been writing code!  My search for a proper tool finally landed me at the doorstep of <a href="http://industriousone.com/premake">Premake</a>.</p>
 
-<p>Premake is written in C and LUA by <a href='http://sourceforge.net/project/memberlist.php?group_id=71616'>3 people</a>. LUA is an embeddable scripting language that has been around for years. It&#8217;s also been used in projects like <a href='http://www.garrysmod.com/'>Garry&#8217;s Mod</a> and <a href='http://www.farcrygame.com/'>FarCry</a>. There is beauty in both its simplicity and power as a language because you can extend the features. You&#8217;ll also find lots of support, books, documentation, and help from various communities that use the language, which is a plus.</p>
+<p>Premake is written in C and LUA by <a href="http://sourceforge.net/project/memberlist.php?group_id=71616">3 people</a>. LUA is an embeddable scripting language that has been around for years.  It's also been used in projects like <a href="http://www.garrysmod.com/">Garry's Mod</a> and <a href="http://www.farcrygame.com/">FarCry</a>.  There is beauty in both its simplicity and power as a language because you can extend the features.  You'll also find lots of support, books, documentation, and help from various communities that use the language, which is a plus.</p>
 
-<h3 id='switching_to_premake'>Switching To Premake</h3>
+<h3>Switching To Premake</h3>
 
-<p>After making the decision on Premake, switching was amazingly easy. This was partly because the site has some recipes to get you started. After adding all the directories I finally got a compile to happen in 10 minutes. I think the neighbors might have heard my cries of joy.</p>
+<p>After making the decision on Premake, switching was amazingly easy.  This was partly because the site has some recipes to get you started.  After adding all the directories I finally got a compile to happen in 10 minutes.  I think the neighbors might have heard my cries of joy.</p>
 
-<p>Soon after the switch I had other libraries added in, compiling, working. I was personally relieved to not only put the whole build tools issue behind me, but to finally look at my code again. I honestly compare this to how Ruby on Rails takes a lot of the pain away with web application development. Much of the heavy lifting is done, just write code!</p>
+<p>Soon after the switch I had other libraries added in, compiling, working.  I was personally relieved to not only put the whole build tools issue behind me, but to finally look at my code again.  I honestly compare this to how Ruby on Rails takes a lot of the pain away with web application development.  Much of the heavy lifting is done, just write code!</p>
 
-<p>It wasn&#8217;t all sparkles and fun though because there are some drawbacks to me choosing this system, but I can live with them for the time being.</p>
+<p>It wasn't all sparkles and fun though because there are some drawbacks to me choosing this system, but I can live with them for the time being.</p>
 
-<h3 id='it_wasnt_all_perfect'>It Wasn&#8217;t All Perfect</h3>
+<h3>It Wasn't All Perfect</h3>
 
-<p>Premake (as of 4.0) does not have a way to generate projects for XCode, though it is planned for 4.1 and 4.2. If you compare it to tools like CMake, you honestly won&#8217;t get the control you&#8217;re seeking, but you can add it if needed. I also found a gotcha with the syntax, but it was quickly figured out and I&#8217;ll be submitting some patches soon.</p>
+<p>Premake (as of 4.0) does not have a way to generate projects for XCode, though it is planned for 4.1 and 4.2.  If you compare it to tools like CMake, you honestly won't get the control you're seeking, but you can add it if needed.  I also found a gotcha with the syntax, but it was quickly figured out and I'll be submitting some patches soon.</p>
 
-<h3 id='final_thoughts'>Final Thoughts</h3>
+<h3>Final Thoughts</h3>
 
-<p>This post is not meant to start a flame war about which build tool is better. I firmly believe each serves a great purpose based on what you need. It took many years for the KDevelop project to switch from Make to CMake. They even tried SCons, but found CMake to be what the doctor ordered. Some people I know swear by SCons, while others say CMake is amazing. It&#8217;s all very simple, pick the tool for the job you need and one you&#8217;ll love to use.</p>
+<p>This post is not meant to start a flame war about which build tool is better.  I firmly believe each serves a great purpose based on what you need.  It took many years for the KDevelop project to switch from Make to CMake.  They even tried SCons, but found CMake to be what the doctor ordered.  Some people I know swear by SCons, while others say CMake is amazing. It's all very simple, pick the tool for the job you need and one you'll love to use.</p>
 
-<p>Premake was a joy to work with in comparison to the others I tried, which is why it stuck. Your mileage may vary of course. Now I need to get back to coding.</p>
+<p>Premake was a joy to work with in comparison to the others I tried, which is why it stuck.  Your mileage may vary of course.  Now I need to get back to coding.</p>
+
       </div>
     </div>
     <div class="secondary">

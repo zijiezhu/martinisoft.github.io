@@ -3,7 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>Welcome to 'Martini Software'</title>
+  <title>{{ page.title }}</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
   <link rel="stylesheet" type="text/css" media="screen, projection" href="/css/screen.css" />
@@ -24,36 +24,24 @@
 
 <body>
 
-  <div id="header" class="group"><div id="header-inner">
-  <h1>Aaron Kalin</h1>
-  <h2>Code Monkey</h2>
-
-  <ul class="group">
-    <li><a href="http://www.martinisoftware.com/" title="Home"><strong>Home</strong></a></li>
-    <li><a href="/resume.html" title="Resume"><strong>Resum&eacute;</strong></a></li>
-    <li><a href="http://github.com/martinisoft" title="Github"><strong>Github</strong></a></li>
-  </ul>
-</div></div> <!-- /header --> <!-- /header-inner -->
+  {% include site_nav.html %}
 
   <hr />
   
   <div id="wrap" class="group">
     <div class="main">
       <div class="entry group green">
-        <h2>Welcome to 'Martini Software'</h2>
-        <p>Whew! After many years of on and off editing, I finally built a site that I love to call home.  Big thanks to the folks at Github for adding this feature to their service.  Seems that every time I look at the site, there is a new feature.</p>
-
-<p>Now my plans are to post at least once per month with topics about programming and other geeky stuff.  I'll be making my first real post in the next couple of weeks.</p>
-
+        <h2>{{ page.title }}</h2>
+        {{ content }}
       </div>
     </div>
     <div class="secondary">
       <div class="entry-meta green">
         <h2>Post Info</h2>
         <ul>
-          <li><span>Date:</span> 23 May 2009</li>
+          <li><span>Date:</span> {{ page.date | date_to_long_string }}</li>
           <li><span>Topic:</span> Code</li>
-          <li><span>Permlink:</span> </li>
+          <li><span>Permlink:</span> {{ page.location }}</li>
         </ul>
       </div>
       <div id="contact" class="blue group">
