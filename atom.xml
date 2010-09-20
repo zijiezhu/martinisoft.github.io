@@ -4,13 +4,26 @@
  <title>Martini Software</title>
  <link href="http://martinisoftware.com/atom.xml" rel="self"/>
  <link href="http://martinisoftware.com/"/>
- <updated>2010-04-13T00:40:01-04:00</updated>
+ <updated>2010-09-20T10:30:56-04:00</updated>
  <id>http://martinisoftware.com/</id>
  <author>
    <name>Aaron Kalin</name>
    <email>akalin@martinisoftware.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Rails 3 and Cucumber</title>
+   <link href="http://martinisoftware.com//2010/09/20/rails3-and-cucumber.html"/>
+   <updated>2010-09-20T00:00:00-04:00</updated>
+   <id>http://martinisoftware.com//2010/09/20/rails3-and-cucumber</id>
+   <content type="html">&lt;p&gt;Diving into Rails 3 has been fun and frustrating these past couple of months. There have been ups and downs, frustrations and entirely new experiences learning this framework all over again. Overall, I am incredibly impressed with the changes made to the framework.  I look back at my super-old Rails 1.0 projects when the framework first hit to now and I honestly can't recognize what I wrote back then. Back then Rails was an unpolished, rough framework with a noble idea of crushing the notions of XML configurations and repeating yourself.  Today it is still the opinionated framework I fell in love with, but with some flexibility in the right places.  You can still stick to their standard, but very easily apply your own thanks to cleverly implemented agnosticism of components.&lt;/p&gt;
+
+&lt;p&gt;With this fresh look at the new Rails, I decided to take the plunge with &lt;a href=&quot;http://rspec.info/&quot;&gt;RSpec&lt;/a&gt; and &lt;a href=&quot;http://cukes.info/&quot;&gt;Cucumber&lt;/a&gt; for testing versus Test::Unit. The first thing that took me was the syntax and how easy it really was to make tests. Cucumber feels like writing an epic novel of user interaction, discovery and sometimes failed experimentation.  My only initial hurdle was the slowness of loading the test environment upon running each test, but thanks to add-ons like &lt;a href=&quot;http://github.com/timcharper/spork&quot;&gt;Spork&lt;/a&gt; I was able to speed things up a bit.&lt;/p&gt;
+
+&lt;p&gt;I'll need more time to become a serious expert, but I was shocked to see how quickly I could pick this system up. Things are organized, flexible and extensible.  Much like a framework I am used to using, except its there to help me be a better developer to myself and my clients. Of course I will have to remember to &lt;a href=&quot;http://rubyhoedown2008.confreaks.com/05-bryan-liles-lightning-talk-tatft-test-all-the-f-in-time.html&quot;&gt;Test All The Fucking Time&lt;/a&gt; when programming now. If you have a doubt, write more test coverage. Simple.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Adventures in automation</title>

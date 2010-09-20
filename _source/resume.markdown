@@ -37,7 +37,7 @@ Developed a PHP based Jukebox system for Natural Selection radio when the other 
 
 Contributed to some open source PHP projects.  See [Text_Wiki](http://pear.php.net/package/Text_Wiki/download/0.15), [Highlighter](http://www.koders.com/php/fidD072C38D9FB382620240EC48AF2D55F71848A4CD.aspx?s=%22Aaron+Kalin%22#L6), [patTemplate](http://www.koders.com/php/fidC74F2B26AB1C9A178F6FC1EC45C557CC49064E1B.aspx?s=%22Aaron+Kalin%22#L45)
 
-This resum&eacute; and web site were all hand-written in XHTML 1.0 with CSS and JQuery.
+This resum&eacute; and web site were all hand-written in XHTML 1.0 with CSS and jQuery.
 
 ### Helpful To Others
 
@@ -47,4 +47,4 @@ Worked as a sales representative for Gamestop (formerly EBGames) where my knowle
 
 A member of the [501st Legion](http://www.501stlegion.org/members/displaymemberdetails.php?userID=4802) since 2003, which is a non-profit Star Wars costuming group dedicated to charity and community service.
 
-Currently in a customer service position with Apple, where I diagnose and troubleshoot problems for Mac, iPhone, iPod, iPad users. I'm also an Apple Certified Macintosh Technician (ACMT).
+Currently in a customer service position with Apple, where I diagnose and troubleshoot problems for Mac, iPhone, iPod and iPad users. On the job I have managed an internal OSX Leopard and Snow Leopard server while also troubleshooting network, printer and workstation issues. I'm also an Apple Certified Macintosh Technician (ACMT) and have been since June 2008.
