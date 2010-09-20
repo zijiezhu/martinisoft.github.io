@@ -20,16 +20,16 @@ I'm a driven developer who's always looking for a challenge, seriously!  So far 
 Ruby, PHP, C, C++, Lua, Shell Scripting
 
 #### Client Side:
-JavaScript, CSS, XHTML, XSLT, XML
+JavaScript, CSS, HTML(All Specifications), XML
 
 #### Frameworks:
-Ruby on Rails, Merb, Sinatra, 
+Ruby on Rails, Sinatra, jQuery
 
 #### Databases:
 MySQL, PostgreSQL, SQLite
 
 #### Tools:
-git, svn, textmate, premake
+git, svn, TextMate, premake, Cucumber, RSpec
 
 ### Server Sided
 
