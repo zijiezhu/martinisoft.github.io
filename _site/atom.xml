@@ -4,7 +4,7 @@
  <title>Martini Software</title>
  <link href="http://martinisoftware.com/atom.xml" rel="self"/>
  <link href="http://martinisoftware.com/"/>
- <updated>2010-09-20T10:43:20-04:00</updated>
+ <updated>2012-04-25T13:10:45-05:00</updated>
  <id>http://martinisoftware.com/</id>
  <author>
    <name>Aaron Kalin</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Rails 3 and Cucumber</title>
    <link href="http://martinisoftware.com//2010/09/20/rails3-and-cucumber.html"/>
-   <updated>2010-09-20T00:00:00-04:00</updated>
+   <updated>2010-09-20T00:00:00-05:00</updated>
    <id>http://martinisoftware.com//2010/09/20/rails3-and-cucumber</id>
    <content type="html">&lt;p&gt;Diving into Rails 3 has been fun and frustrating these past couple of months. There have been ups and downs, frustrations and entirely new experiences learning this framework all over again. Overall, I am incredibly impressed with the changes made to the framework.  I look back at my super-old Rails 1.0 projects when the framework first hit to now and I honestly can't recognize what I wrote back then. Back then Rails was an unpolished, rough framework with a noble idea of crushing the notions of XML configurations and repeating yourself.  Today it is still the opinionated framework I fell in love with, but with some flexibility in the right places.  You can still stick to their standard, but very easily apply your own thanks to cleverly implemented agnosticism of components.&lt;/p&gt;
 
@@ -28,7 +28,7 @@
  <entry>
    <title>Adventures in automation</title>
    <link href="http://martinisoftware.com//2010/04/12/adventures-in-automation.html"/>
-   <updated>2010-04-12T00:00:00-04:00</updated>
+   <updated>2010-04-12T00:00:00-05:00</updated>
    <id>http://martinisoftware.com//2010/04/12/adventures-in-automation</id>
    <content type="html">&lt;p&gt;Been a little while since my last post here.  A short explanation of the last 4 months in bullet point format:&lt;/p&gt;
 
@@ -69,7 +69,7 @@
  <entry>
    <title>Dusting off the cobwebs</title>
    <link href="http://martinisoftware.com//2009/11/22/dusting-off-the-cobwebs.html"/>
-   <updated>2009-11-22T00:00:00-05:00</updated>
+   <updated>2009-11-22T00:00:00-06:00</updated>
    <id>http://martinisoftware.com//2009/11/22/dusting-off-the-cobwebs</id>
    <content type="html">&lt;p&gt;Took many months, but I finally found some time to clean up and update my site design.  I owe a lot of the inspiration and code to Dan Cederholm's new book &lt;a href=&quot;http://handcraftedcss.com/&quot;&gt;Handcrafted CSS&lt;/a&gt;.&lt;/p&gt;
 
@@ -84,7 +84,7 @@
  <entry>
    <title>Nokogiri on Leopard</title>
    <link href="http://martinisoftware.com//2009/07/31/nokogiri-on-leopard.html"/>
-   <updated>2009-07-31T00:00:00-04:00</updated>
+   <updated>2009-07-31T00:00:00-05:00</updated>
    <id>http://martinisoftware.com//2009/07/31/nokogiri-on-leopard</id>
    <content type="html">&lt;p&gt;My first experience with &lt;a href=&quot;http://en.wikipedia.org/wiki/Regular_expression&quot;&gt;Regular Expressions&lt;/a&gt; was writing whats called a &lt;a href=&quot;http://en.wikipedia.org/wiki/Web_scraping&quot;&gt;web scraper&lt;/a&gt; to fetch weather data from Weather.com.  Back then, this would involve a ton of IF statements and a large array of data.  Very tedious and time consuming, but it was very educational.  Today, Ruby has a couple convenient libraries built for this sort of task.  Even a way to mimic a browser so you can get to pages normally reserved for site members.&lt;/p&gt;
 
@@ -156,7 +156,7 @@ I_KNOW_I_AM_USING_AN_OLD_AND_BUGGY_VERSION_OF_LIBXML2 before requring nokogiri.&
  <entry>
    <title>Haml and Sass with Rails</title>
    <link href="http://martinisoftware.com//2009/07/19/haml-and-sass.html"/>
-   <updated>2009-07-19T00:00:00-04:00</updated>
+   <updated>2009-07-19T00:00:00-05:00</updated>
    <id>http://martinisoftware.com//2009/07/19/haml-and-sass</id>
    <content type="html">&lt;p&gt;Getting back into the latest Rails and installing the latest version of the greatest HTML markup system ever was a little tougher than expected.  Turns out the new hotness with Rails since 2.1 is to config.gem everything, which makes sense.  This doesn't work well for things like HAML, which expect to be plugins.  Luckily you can conform to the new trend without littering your vendor/plugins folder.&lt;/p&gt;
 
@@ -192,11 +192,7 @@ I_KNOW_I_AM_USING_AN_OLD_AND_BUGGY_VERSION_OF_LIBXML2 before requring nokogiri.&
 
 &lt;p&gt;You have to place the following in a new file inside the config/initializers/ folder (I called mine haml_and_sass.rb) in order to get HAML to properly load, which allows you to configure its options as well.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;    &lt;span class=&quot;c1&quot;&gt;# Init HAML&lt;/span&gt;
-    &lt;span class=&quot;no&quot;&gt;Haml&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init_rails&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;binding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+&lt;p&gt;Liquid error: No such file or directory - posix_spawnp&lt;/p&gt;
 
 &lt;p&gt;Once you add that, SASS will work beautifully and allow you to configure it normally.&lt;/p&gt;
 </content>
@@ -205,7 +201,7 @@ I_KNOW_I_AM_USING_AN_OLD_AND_BUGGY_VERSION_OF_LIBXML2 before requring nokogiri.&
  <entry>
    <title>Adventures in Makefiles</title>
    <link href="http://martinisoftware.com//2009/06/18/adventures-in-makefiles.html"/>
-   <updated>2009-06-18T00:00:00-04:00</updated>
+   <updated>2009-06-18T00:00:00-05:00</updated>
    <id>http://martinisoftware.com//2009/06/18/adventures-in-makefiles</id>
    <content type="html">&lt;p&gt;Writing Makefiles is painful.  Especially in multiple platforms.  Check out the source code to any C or C++ based application to see what I mean.  You'll quickly lose your sanity wrapping your brain around the syntax, scope and depth of these files.  Thankfully there are tools out there to make this job much easier, but which one?  I chose Premake.&lt;/p&gt;
 
@@ -238,7 +234,7 @@ I_KNOW_I_AM_USING_AN_OLD_AND_BUGGY_VERSION_OF_LIBXML2 before requring nokogiri.&
  <entry>
    <title>Welcome to 'Martini Software'</title>
    <link href="http://martinisoftware.com//2009/05/23/first-post.html"/>
-   <updated>2009-05-23T00:00:00-04:00</updated>
+   <updated>2009-05-23T00:00:00-05:00</updated>
    <id>http://martinisoftware.com//2009/05/23/first-post</id>
    <content type="html">&lt;p&gt;Whew! After many years of on and off editing, I finally built a site that I love to call home.  Big thanks to the folks at Github for adding this feature to their service.  Seems that every time I look at the site, there is a new feature.&lt;/p&gt;
 

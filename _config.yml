@@ -1,5 +1,4 @@
 pygments: true
 markdown: rdiscount
 exclude: [Rakefile]
-destination: .
 source: ./_source
