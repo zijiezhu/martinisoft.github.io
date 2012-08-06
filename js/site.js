@@ -14,12 +14,16 @@ $(document).ready(function() {
   });
 
   function getRepos(username, callback) {
-    $.getJSON('https://api.github.com/users/'+username+'/repos', function(data) {
-      var repos = data;
-      repos = $.grep(repos, function(r) { return !r.fork });
-      repos.sort(function(a, b) { return b.watchers_count - a.watchers_count });
-      repos = $(repos);
-      callback(repos);
+    $.ajax({
+      url: 'https://api.github.com/users/'+username+'/repos',
+      dataType: 'jsonp',
+      success: function(json) {
+        var repos = json.data;
+        repos = $.grep(repos, function(r) { return !r.fork });
+        repos.sort(function(a, b) { return b.watchers_count - a.watchers_count });
+        repos = $(repos);
+        callback(repos);
+      }
     });
   }
 
