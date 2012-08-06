@@ -5,14 +5,14 @@ layout: resume
 # Aaron Kalin
 ## Driven Developer
 
-* **Location:** Tampa, FL
+* **Location:** Chicago, IL
 * **Github:** [github.com/martinisoft](http://github.com/martinisoft)
 * **Twitter:** [twitter.com/martinisoft](http://twitter.com/martinisoft)
 * **E-Mail:** <akalin@martinisoftware.com>
 * **Homepage:** [martinisoftware.com](http://www.martinisoftware.com/)
 
 ### A Little About Me
-I'm a driven developer who's always looking for a challenge, seriously!  So far I have been programming since 1995 when I received an old copy of the Visual Basic 3.0 software developer kit as a birthday present.  Since then I've been taking apart computers and programs alike to learn their inner workings and make improvements.  This has usually been a hobby of mine, but I'd like to make it a serious career.  Simply put, I'm really good at troubleshooting and deconstructing problems, finding a solution and fully understanding the process as I re-create the steps.
+I'm a passionate developer who's always looking for a challenge.  I have been programming since 1995 when I received an old copy of the Visual Basic 3.0 software developer kit as a birthday present.  Since then I've been taking apart computers and programs alike to learn their inner workings and make improvements.  This has usually been a hobby of mine, but I'd like to make it a serious career.  Simply put, I'm really good at troubleshooting and deconstructing problems, finding a solution and fully understanding the process as I re-create the steps.
 
 ### Fluent in many languages
 
