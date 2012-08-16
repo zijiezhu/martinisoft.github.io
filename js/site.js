@@ -7,7 +7,7 @@ $(document).ready(function() {
     repos.each(function() {
       var escapedDesc = $('<div/>').text(this.description).html();
       $('#repos').append(
-        '<dt><a href="'+this.url+'">'+this.name+'</a> ('+this.watchers+')</dt>'+
+        '<dt><a href="'+this.homepage+'">'+this.name+'</a> ('+this.watchers+')</dt>'+
         '<dd>'+escapedDesc+'</dd>'
       );
     });
