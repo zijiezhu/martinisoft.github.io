@@ -14,31 +14,31 @@
   {% include site_nav.html %}
 
   <hr />
-  
+
   <div id="wrap" class="group">
     <div class="main">
       <div id="entrylist" class="green group">
         <h2>Blog Posts</h2>
         <ul>
-          {% for post in site.posts %} 
+          {% for post in site.posts %}
             <li><span>{{ post.date | date_to_string }}</span> / <a href="{{ post.url }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
       {% include contact.html %}
     </div> <!-- /.main -->
-  
+
     <hr />
-  
+
     <div class="secondary">
       <div id="github" class="yellow group">
         <h2>Github</h2>
         <div id="repos"></div>
       </div>
     </div> <!-- /.secondary -->
-  
+
     <hr />
-  
+
     <div id="footer">
       <p>Copyright &copy; 2009-2012 Aaron Kalin - All Rights Reserved</p>
     </div> <!-- /footer -->
