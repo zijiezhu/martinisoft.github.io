@@ -26,7 +26,7 @@ task :new do
   title = ask("Title: ")
   filename = title.downcase.gsub(/[^a-z0-9]/,"-")
   filepath = "_drafts/#{Time.now.strftime('%Y-%m-%d-')}#{filename}.markdown"
-  File.open(filepath, 'w+') do |f| 
+  File.open(filepath, 'w+') do |f|
     f << post_template.gsub(/POST_TITLE/, title)
   end
   sh "git add #{filepath}"
