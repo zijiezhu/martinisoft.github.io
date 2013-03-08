@@ -8,7 +8,7 @@ Total Time: **2 to 4 minutes**
 I'm not one to write poetry, but I woke up one morning a few months back
 inspired to write. At the time there was a fair amount of drama going on
 twitter (when is it not?) and that likely inspired my writing. This was well
-received as a lightning talk at SCNA last year and I wanted to share this
+received as a lightning talk at [SCNA](http://scna.softwarecraftsmanship.org/) last year and I wanted to share this
 with everyone.
 
 "This is terrible, who the hell wrote this?" I hear in an office.
