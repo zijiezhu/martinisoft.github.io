@@ -1,3 +1,4 @@
+name: Martini Software
 pygments: true
 markdown: redcarpet
 exclude: [Rakefile, Gemfile, Gemfile.lock, .rvmrc]
