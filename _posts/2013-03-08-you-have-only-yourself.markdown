@@ -1,9 +1,8 @@
 ---
 layout: post
 title: You have only yourself
+total_time: 2 to 4 minutes
 ---
-
-Total Time: **2 to 4 minutes**
 
 I'm not one to write poetry, but I woke up one morning a few months back
 inspired to write. At the time there was a fair amount of drama going on

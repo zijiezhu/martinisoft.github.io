@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Better Presentations
+total_time: Under 10 minutes
 ---
-
-Total Time: **Under 10 minutes**
 
 I've had a few people ask me for advice on how I approach creating
 presentations. This was broken out from my "Choose your own
