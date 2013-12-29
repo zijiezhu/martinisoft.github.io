@@ -1,4 +1,6 @@
-require 'rake'
+require "tmpdir"
+require "bundler/setup"
+require "jekyll"
 
 # Template for the post
 post_template = <<END_TEMPLATE
