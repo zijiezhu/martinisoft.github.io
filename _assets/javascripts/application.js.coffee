@@ -32,3 +32,33 @@ $ ->
     setTimeout (->
       t.addClass "slider"
     ), (i + 1) * 330
+
+Anchor =
+  init: ->
+    Anchor.slidey = $(".slidey")
+    $(window).resize(Anchor.bindResize).trigger "resize"
+    Anchor.linky = $(".linky").click(Anchor.toggleSlidey)
+    setTimeout (->
+      Anchor.hideSlidey()
+      $("body").addClass "js-enabled"
+    ), 10
+    $("a[href=\"#search\"]").click ->
+      Anchor.toggleSlidey.call Anchor.linky  unless Anchor.linky.hasClass("active")
+
+  hideSlidey: ->
+    Anchor.slidey.css "margin-top", @_slideyHeight
+    Anchor.linky and Anchor.linky.removeClass("active")
+    this
+
+  toggleSlidey: ->
+    self = Anchor
+    me = $(this)
+    me.toggleClass "active"
+    self.slidey.css "margin-top", (if me.hasClass("active") then 0 else self._slideyHeight)
+    false
+
+  bindResize: ->
+    Anchor._slideyHeight = -(Anchor.slidey.height() + 1)
+    Anchor.hideSlidey()
+
+$ Anchor.init
