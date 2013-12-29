@@ -12,118 +12,114 @@ body {
 }
 
 h1,h2,h3,h4,h5 {
-    font-family: $serif;
+  font-family: $serif;
 }
 
 p {
-    margin-bottom: $lh;
+  margin-bottom: $lh;
 }
 
 a, a:visited, a:active {
-    color: $link;
-    @include transit(all,0.25s,ease-in-out);
+  color: $link;
+  @include transit(all,0.25s,ease-in-out);
 }
 
 a:hover {
-    color: $accent;
-    @include transit(all,.25s, ease-in-out)
+  color: $accent;
+  @include transit(all,.25s, ease-in-out)
 }
 
 em {
-    padding: 1px 2px;
-    border-radius: 2px;
-    background: #ffe8c0;
+  padding: 1px 2px;
+  border-radius: 2px;
+  background: #ffe8c0;
 }
 
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 small {
-    font-size: $fs5;
+  font-size: $fs5;
 }
 
 .hilite {
-    display: inline-block;
-    padding: 0 0.3em;
-    @include br(4px);
-    background: $hilite;
+  display: inline-block;
+  padding: 0 0.3em;
+  @include br(4px);
+  background: $hilite;
 }
 
 blockquote, blockquote p {
-    font-style: italic;
-    line-height: 1.3em;
-    text-align: center;
-    color: lighten($black, .2);
-    margin-bottom: $lh;
+  font-style: italic;
+  line-height: 1.3em;
+  text-align: center;
+  color: lighten($black, .2);
+  margin-bottom: $lh;
 }
 
-
 /*   Code Formatting    */
-
 code {
-    color: $accent;
-    font-family: "Monaco", "Courier New", "Courier";
-    font-size: .75em;
-    font-weight: bold;
+  color: $accent;
+  font-family: "Monaco", "Courier New", "Courier";
+  font-size: .75em;
+  font-weight: bold;
 }
 
 .highlight {
-    background: $black;
-    padding: 12px;
-    border-radius: 4px;
-    margin-bottom: $lh;
-    overflow-x: scroll;
+  background: $black;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: $lh;
+  overflow-x: scroll;
 
-    code {
-        color: $white;
-        font-family: "Monaco", "Courier New", "Courier";
-        font-size: .9em;
-        .lineno {
-            margin-right: $lh/2;
-            color: $grey-light;
-            line-height: 2em;
-        }
-        .nt {
-            color: #c85b5c;
-        }
-        .na {
-            color: #f0e687;
-        }
-        .s {
-            color: #87ceeb;
-        }
+  code {
+    color: $white;
+    font-family: "Monaco", "Courier New", "Courier";
+    font-size: .9em;
+    .lineno {
+      margin-right: $lh/2;
+      color: $grey-light;
+      line-height: 2em;
     }
+    .nt {
+      color: #c85b5c;
+    }
+    .na {
+      color: #f0e687;
+    }
+    .s {
+      color: #87ceeb;
+    }
+  }
 }
 
-
-
 hr {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    height: 4px;
-    background: $grey-light;
-    border: none;
-    margin-bottom: $lh;
-    border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 4px;
+  background: $grey-light;
+  border: none;
+  margin-bottom: $lh;
+  border-radius: 2px;
 }
 
 input {
-    background: none;
-    border: none;
-    outline: none;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .archive input {
-    background: none;
-    outline: none;
-    width: 100%;
-    font-family: $serif;
-    &:focus {
-        background: white;
-        color: $black;
-    }
+  background: none;
+  outline: none;
+  width: 100%;
+  font-family: $serif;
+  &:focus {
+    background: white;
+    color: $black;
+  }
 }
 
 /* Variables and Building Blocks */
@@ -167,7 +163,6 @@ input {
     float: none;
 }
 
-
 /* Header */
 
 header.site-header {
@@ -184,33 +179,32 @@ header.site-header {
 
 #bump .darken {
 
-      a {
-      color: $black;
+  a {
+    color: $black;
+    @include transit(all, .2s, ease-in-out);
+
+    &:hover {
+      color: $link;
       @include transit(all, .2s, ease-in-out);
+    }
+  }
 
-      &:hover {
-        color: $link;
-        @include transit(all, .2s, ease-in-out);
-        }
-      }
+  .menu .icons {
+    color: $black;
+  }
 
-      .menu .icons {
-          color: $black;
-      }
-
-      nav ul li a {
-            color: $black;
-            &:active {
-              color: $link;
-            }
-            &:hover {
-                text-shadow: none;
-                color: $link;
-            }
-        }
+  nav ul li a {
+    color: $black;
+    &:active {
+      color: $link;
+    }
+    &:hover {
+      text-shadow: none;
+      color: $link;
+    }
+  }
 
 }
-
 
 header.site-header a.menu {
   display: none;
@@ -219,25 +213,26 @@ header.site-header a.menu {
 header.site-header hgroup h1, header.site-header nav ul {
   font-family: $sans;
 }
+
 header.site-header hgroup {
   float: left;
   padding-left: 5vw;
   h1 {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 100%;
-      color: $accent;
-      letter-spacing: 2px;
-      text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: $accent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
   a {
-      color: #fff;
-      @include transit(all, .2s, ease);
+    color: #fff;
+    @include transit(all, .2s, ease);
 
-      &:hover {
-        @include tshd(0, 0, 3px, rgba(255,255,255,.6));
-        @include transit(all, .2s, ease);
-      }
+    &:hover {
+      @include tshd(0, 0, 3px, rgba(255,255,255,.6));
+      @include transit(all, .2s, ease);
+    }
   }
 }
 
@@ -826,7 +821,6 @@ footer {
     }
   }
 }
-
 
 @media only screen and (max-width: $breakpoint-1-max-width) {
 
