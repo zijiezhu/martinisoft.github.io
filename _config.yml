@@ -1,7 +1,7 @@
 name: Martini Software
 pygments: true
 markdown: redcarpet
-exclude: [Rakefile, Gemfile, Gemfile.lock, .rvmrc, .ruby-version, .ruby-gemset]
+exclude: [README.markdown, Rakefile, Gemfile, Gemfile.lock, .ruby-version, .ruby-gemset]
 timezone: America/Chicago
 
 assets:
