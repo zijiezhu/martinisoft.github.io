@@ -1,4 +1,15 @@
 name: Martini Software
 pygments: true
 markdown: redcarpet
-exclude: [Rakefile, Gemfile, Gemfile.lock, .rvmrc]
+exclude: [Rakefile, Gemfile, Gemfile.lock, .rvmrc, .ruby-version, .ruby-gemset]
+timezone: America/Chicago
+
+links:
+  - title: About
+    url: /about
+  - title: Github
+    url: https://github.com/martinisoft
+    external: true
+  - title: Twitter
+    url: https://twitter.com/martinisoft
+    external: true
