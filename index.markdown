@@ -1,5 +1,5 @@
 ---
 layout: home
-title: Martini Software
+title: Recent Posts
 ---
 
