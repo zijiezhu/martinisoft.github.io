@@ -1,4 +1,5 @@
 name: Martini Software
+title: Martini Software
 pygments: true
 markdown: redcarpet
 exclude:
