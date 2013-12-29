@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Adventures in Makefiles</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+  <link rel="stylesheet" type="text/css" media="screen, projection" href="/css/screen.css" />
+  <script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script src="/js/site.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+  <div id="header" class="group"><div id="header-inner">
+  <h1>Aaron Kalin</h1>
+  <h2>Codesmith</h2>
+
+  <ul class="group">
+    <li><a href="http://www.martinisoftware.com/" title="Home"><strong>Home</strong></a></li>
+    <li><a href="https://github.com/martinisoft" title="Github"><strong>Github</strong></a></li>
+    <li><a href="https://twitter.com/martinisoft" title="Twitter"><strong>Twitter</strong></a></li>
+  </ul>
+</div></div> <!-- /header --> <!-- /header-inner -->
+
+
+  <hr />
+
+  <div id="wrap" class="group">
+    <div class="main">
+      <div class="entry group green">
+        <h2>Adventures in Makefiles</h2>
+        <p>Writing Makefiles is painful.  Especially in multiple platforms.  Check out the source code to any C or C++ based application to see what I mean.  You&#39;ll quickly lose your sanity wrapping your brain around the syntax, scope and depth of these files.  Thankfully there are tools out there to make this job much easier, but which one?  I chose Premake.</p>
+
+<h3>Looking Around</h3>
+
+<p>Initially I gave CMake and Scons a good run for the money.  You&#39;ll see my struggle with this issue in Listbotto.  Going back and forth, editing and referencing documentation.  After nearly two full days I finally got a working compile, but at what cost?  Nearly two full days I could have been writing code!  My search for a proper tool finally landed me at the doorstep of <a href="http://industriousone.com/premake">Premake</a>. </p>
+
+<p>Premake is written in C and LUA by <a href="http://sourceforge.net/project/memberlist.php?group_id=71616">3 people</a>. LUA is an embeddable scripting language that has been around for years.  It&#39;s also been used in projects like <a href="http://www.garrysmod.com/">Garry&#39;s Mod</a> and <a href="http://www.farcrygame.com/">FarCry</a>.  There is beauty in both its simplicity and power as a language because you can extend the features.  You&#39;ll also find lots of support, books, documentation, and help from various communities that use the language, which is a plus.</p>
+
+<h3>Switching To Premake</h3>
+
+<p>After making the decision on Premake, switching was amazingly easy.  This was partly because the site has some recipes to get you started.  After adding all the directories I finally got a compile to happen in 10 minutes.  I think the neighbors might have heard my cries of joy.</p>
+
+<p>Soon after the switch I had other libraries added in, compiling, working.  I was personally relieved to not only put the whole build tools issue behind me, but to finally look at my code again.  I honestly compare this to how Ruby on Rails takes a lot of the pain away with web application development.  Much of the heavy lifting is done, just write code! </p>
+
+<p>It wasn&#39;t all sparkles and fun though because there are some drawbacks to me choosing this system, but I can live with them for the time being.</p>
+
+<h3>It Wasn&#39;t All Perfect</h3>
+
+<p>Premake (as of 4.0) does not have a way to generate projects for XCode, though it is planned for 4.1 and 4.2.  If you compare it to tools like CMake, you honestly won&#39;t get the control you&#39;re seeking, but you can add it if needed.  I also found a gotcha with the syntax, but it was quickly figured out and I&#39;ll be submitting some patches soon.</p>
+
+<h3>Final Thoughts</h3>
+
+<p>This post is not meant to start a flame war about which build tool is better.  I firmly believe each serves a great purpose based on what you need.  It took many years for the KDevelop project to switch from Make to CMake.  They even tried SCons, but found CMake to be what the doctor ordered.  Some people I know swear by SCons, while others say CMake is amazing. It&#39;s all very simple, pick the tool for the job you need and one you&#39;ll love to use.  </p>
+
+<p>Premake was a joy to work with in comparison to the others I tried, which is why it stuck.  Your mileage may vary of course.  Now I need to get back to coding.</p>
+
+      </div>
+    </div>
+    <div class="secondary">
+      <div class="entry-meta green">
+        <h2>Post Info</h2>
+        <ul>
+          <li><span>Date:</span> 18 June 2009</li>
+          <li><span>Topic:</span> Code</li>
+          <li><span>Permlink:</span> <a href="http://martinisoftware.com/2009/06/18/adventures-in-makefiles.html">/2009/06/18/adventures-in-makefiles.html</a></li>
+        </ul>
+      </div>
+      <div id="contact" class="blue group">
+  <h2>Contact me</h2>
+  <ul>
+    <li><p>I am <strong>not</strong> looking for work at this time.</p></li>
+    <li><span>Github:</span> <a href="http://github.com/martinisoft">github.com/martinisoft</a></li>
+    <li><span>Twitter:</span> <a href="http://twitter.com/martinisoft">twitter.com/martinisoft</a></li>
+    <li><span>E-Mail:</span> <span class="mailme">akalin at martinisoftware dot com</span></li>
+  </ul>
+</div> <!-- /#contact -->
+
+      <div id="github" class="yellow group">
+        <h2>Github</h2>
+        <div id="repos"></div>
+      </div> <!-- /#github -->
+    </div>
+
+    <hr />
+
+    <div id="footer">
+  <p>Copyright &copy; 2009-2013 Aaron Kalin - All Rights Reserved</p>
+</div> <!-- /footer -->
+
+  </div> <!-- end #wrap -->
+  <a href="https://github.com/martinisoft"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+  <script type="text/javascript">
+    var clicky_site_ids = clicky_site_ids || [];
+    clicky_site_ids.push(66418158);
+    (function() {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//static.getclicky.com/js';
+      ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+    })();
+  </script>
+  <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66418158ns.gif" /></p></noscript>
+</body>
+</html>

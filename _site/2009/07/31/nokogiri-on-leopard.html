@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Nokogiri on Leopard</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+  <link rel="stylesheet" type="text/css" media="screen, projection" href="/css/screen.css" />
+  <script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script src="/js/site.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+  <div id="header" class="group"><div id="header-inner">
+  <h1>Aaron Kalin</h1>
+  <h2>Codesmith</h2>
+
+  <ul class="group">
+    <li><a href="http://www.martinisoftware.com/" title="Home"><strong>Home</strong></a></li>
+    <li><a href="https://github.com/martinisoft" title="Github"><strong>Github</strong></a></li>
+    <li><a href="https://twitter.com/martinisoft" title="Twitter"><strong>Twitter</strong></a></li>
+  </ul>
+</div></div> <!-- /header --> <!-- /header-inner -->
+
+
+  <hr />
+
+  <div id="wrap" class="group">
+    <div class="main">
+      <div class="entry group green">
+        <h2>Nokogiri on Leopard</h2>
+        <p>My first experience with <a href="http://en.wikipedia.org/wiki/Regular_expression">Regular Expressions</a> was writing whats called a <a href="http://en.wikipedia.org/wiki/Web_scraping">web scraper</a> to fetch weather data from Weather.com.  Back then, this would involve a ton of IF statements and a large array of data.  Very tedious and time consuming, but it was very educational.  Today, Ruby has a couple convenient libraries built for this sort of task.  Even a way to mimic a browser so you can get to pages normally reserved for site members.</p>
+
+<p>After some careful research I settled on <a href="http://nokogiri.rubyforge.org/">Nokogiri</a> because its the library of choice with <a href="http://mechanize.rubyforge.org/">Mechanize</a>, which I use to grab data from web sites and scrape the data from them easily.  Before you can really use this library on OSX Leopard, you have to jump through a few hoops.</p>
+
+<p>Mechanize may give you an error message like so:</p>
+
+<blockquote>
+<p>WARNING: Nokogiri was built against LibXML version 2.7.3, but has dynamically loaded 2.6.16
+HI.  You&#39;re using libxml2 version 2.6.16 which is over 4 years old and has
+plenty of bugs.  We suggest that for maximum HTML/XML parsing pleasure, you
+upgrade your version of libxml2 and re-install nokogiri.  If you like using
+libxml2 version 2.6.16, but don&#39;t like this warning, please define the constant
+I<em>KNOW</em>I<em>AM</em>USING<em>AN</em>OLD<em>AND</em>BUGGY<em>VERSION</em>OF_LIBXML2 before requring nokogiri.</p>
+</blockquote>
+
+<p>This is easy to fix, so here&#39;s how to get rolling in Leopard:</p>
+
+<h3>Install the latest libxml2 and libxslt</h3>
+
+<p>Make a source directory somewhere and do the following commands to grab the latest versions of libxml2 and libxslt:</p>
+
+<pre>
+    $ curl -O ftp://xmlsoft.org/libxml2/libxml2-2.7.3.tar.gz
+    $ curl -O ftp://xmlsoft.org/libxml2/libxslt-1.1.24.tar.gz
+</pre>
+
+<p>Once done, unpack both like so:</p>
+
+<pre>
+    $ tar xzf libxml2-2.7.3.tar.gz
+    $ tar xzf libxslt-1.1.24.tar.gz
+</pre>
+
+<p>Now change into the libxml directory and build it:</p>
+
+<pre>
+    $ ./configure
+    $ make
+    $ sudo make install
+</pre>
+
+<p>Now jump back to the libxslt directory and do the same:</p>
+
+<pre>
+    $ cd ../libxslt-1.1.24
+    $ ./configure
+    $ make
+    $ sudo make install
+</pre>
+
+<p>If you want, go ahead and delete the sources to save space. Now you&#39;re ready for the final step.</p>
+
+<h3>Install Nokogiri</h3>
+
+<p>Now installing Nokogiri is super easy once we tell it where to link.</p>
+
+<pre>
+    $ sudo gem install nokogiri -- --with-xml2-include=/usr/local/include/libxml2 --with-xml2-lib=/usr/local/lib
+</pre>
+
+<p>Once you run that you are good to go.</p>
+
+      </div>
+    </div>
+    <div class="secondary">
+      <div class="entry-meta green">
+        <h2>Post Info</h2>
+        <ul>
+          <li><span>Date:</span> 31 July 2009</li>
+          <li><span>Topic:</span> Code</li>
+          <li><span>Permlink:</span> <a href="http://martinisoftware.com/2009/07/31/nokogiri-on-leopard.html">/2009/07/31/nokogiri-on-leopard.html</a></li>
+        </ul>
+      </div>
+      <div id="contact" class="blue group">
+  <h2>Contact me</h2>
+  <ul>
+    <li><p>I am <strong>not</strong> looking for work at this time.</p></li>
+    <li><span>Github:</span> <a href="http://github.com/martinisoft">github.com/martinisoft</a></li>
+    <li><span>Twitter:</span> <a href="http://twitter.com/martinisoft">twitter.com/martinisoft</a></li>
+    <li><span>E-Mail:</span> <span class="mailme">akalin at martinisoftware dot com</span></li>
+  </ul>
+</div> <!-- /#contact -->
+
+      <div id="github" class="yellow group">
+        <h2>Github</h2>
+        <div id="repos"></div>
+      </div> <!-- /#github -->
+    </div>
+
+    <hr />
+
+    <div id="footer">
+  <p>Copyright &copy; 2009-2013 Aaron Kalin - All Rights Reserved</p>
+</div> <!-- /footer -->
+
+  </div> <!-- end #wrap -->
+  <a href="https://github.com/martinisoft"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+  <script type="text/javascript">
+    var clicky_site_ids = clicky_site_ids || [];
+    clicky_site_ids.push(66418158);
+    (function() {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//static.getclicky.com/js';
+      ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+    })();
+  </script>
+  <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66418158ns.gif" /></p></noscript>
+</body>
+</html>
