@@ -1,3 +1,32 @@
-<div id="footer">
-  <p>Copyright &copy; 2009-2013 Aaron Kalin - All Rights Reserved</p>
-</div> <!-- /footer -->
+<div class="push"></div>
+  <footer>
+    <aside class="wrap">
+      <ol class="prev-posts">
+        <p class="list-title">Recent Posts</p>
+        {% for post in site.posts | limit:3 %} <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title | strip_html | strip_newlines | truncate: 30 }} </a></span>
+              <span class="date">{{post.date | date: "%b %d, %Y" }}</span>
+            </li>
+        {% endfor %}
+      </ol>
+
+      <div class="social">
+        <ul>
+            <li><a id="mail" href="mailto:akalin@martinisoftware.com"><span class="foot-link">Contact Me</span></a></li>
+            <li><a id="twit" href="https://twitter.com/martinisoft" target="_blank"><span class="foot-link">@martinisoft</span></a></li>
+            <li><a id="drib" href="http://dribbble.com/martinisoft" target="_blank"><span class="foot-link">Dribbble</span></a></li>
+        </ul>
+    </div>
+    </aside>
+    <small>&copy; 2009-2014 Aaron Kalin - All Right Reserved. Powered by <a href="http://jekyllrb.com">Jekyll</a>.</small>
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="{{ "vendor/jquery-1.10.2.min" | asset_path }}"><\/script>')</script>
+  {% javascript vendor/retina-1.1.0.min %}
+  {% javascript application %}
+
+
+  </body>
+</html>
