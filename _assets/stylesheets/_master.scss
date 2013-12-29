@@ -21,6 +21,7 @@ p {
 
 a, a:visited, a:active {
   color: $link;
+  text-decoration: none;
   @include transit(all,0.25s,ease-in-out);
 }
 
