@@ -621,24 +621,38 @@ footer {
     }
 
     .social {
-        position: absolute;
-        top: 109px;
-        @include column(2,12);
-        right: 5vw;
-        font-style: italic;
-        a {
-            &:hover {
-                color: $white;
-            }
+      position: absolute;
+      top: 109px;
+      @include column(3,12);
+      right: 5vw;
+      font-style: italic;
+      a {
+        &:hover {
+          color: $white;
         }
-        ul {
-            li {
-                margin-bottom: $lh/2;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
+      }
+      .author-card {
+        text-align: center;
+        @include column(6,12);
+        img {
+          @include br(50px);
         }
+        span {
+          font-family: $sans;
+          font-style: normal;
+        }
+      }
+      ul {
+        margin: 0;
+        float: right;
+        li {
+          list-style-type: none;
+          margin-bottom: $lh/2;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
     }
 }
 
