@@ -13,9 +13,14 @@ exclude:
 timezone: America/Chicago
 
 assets:
-  compress:
-    css:  sass
-    js:   uglifier
+  cache: true
+  css_compressor: sass
+  js_compressor: uglifier
+  sources:
+    - _assets/javascripts
+    - _assets/fonts
+    - _assets/stylesheets
+    - _assets/images
 
 links:
   - title: About
