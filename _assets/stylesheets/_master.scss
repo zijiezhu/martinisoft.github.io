@@ -551,109 +551,111 @@ header.site-header nav {
 }
 
 footer {
+  width: 100%;
+  background: $black;
+  height: $footerHeight;
+  font-size: $fsp;
+  color: $white;
+  position: relative;
+
+  // Contain that ish
+  section {
+    @include column(10);
+    @include row(10);
+    display: block;
+    margin: 0 auto;
+  }
+
+  small {
+    font-size: ($fs6);
+    text-align: center;
+    display: block;
     width: 100%;
-    background: $black;
-    height: $footerHeight;
-    font-size: $fsp;
-    color: $white;
-    position: relative;
-
-    // Contain that ish
-    section {
-        @include column(10);
-        @include row(10);
-        display: block;
-        margin: 0 auto;
+    position: absolute;
+    bottom: 8px;
+    font-family: $sans;
+    text-transform: uppercase;
+    color: transparentize($white, .9);
+    a {
+      color: transparentize($white, .7);
     }
+  }
 
-    small {
-        font-size: ($fs6);
-        text-align: center;
-        display: block;
-        width: 100%;
-        position: absolute;
-        bottom: 8px;
-        font-family: $sans;
-        text-transform: uppercase;
-        color: transparentize($white, .9);
-        a {
-            color: transparentize($white, .7);
-        }
+  .list-title {
+    margin-bottom: $lh/2;
+    border-bottom: 2px solid $link;
+    font-style: italic;
+    font-size: $fs4;
+  }
+  .prev-posts {
+    @include column(6,10);
+    max-width: 600px;
+    min-height: 250px;
+    padding-left: 5vw;
+    p {
+      padding-top: $lh*2;
     }
-
-    .list-title {
-        margin-bottom: $lh/2;
-        border-bottom: 2px solid $link;
+    li {
+      @include row(12);
+      margin-top: $lh/2;
+      .recent-title {
+        @include column(8,12);
         font-style: italic;
-        font-size: $fs4;
-    }
-    .prev-posts {
-        @include column(6,10);
-        max-width: 600px;
-        min-height: 250px;
-        padding-left: 5vw;
-        p {
-            padding-top: $lh*2;
-        }
-        li {
-            @include row(12);
-            margin-top: $lh/2;
-            .recent-title {
-                @include column(8,12);
-                font-style: italic;
-                a {
-                    &:hover {
-                        color: $white;
-                    }
-                }
-            }
-            span.date {
-                float: none;
-                color: transparentize($grey-light, .4);
-                @include column(4,12);
-                position: relative;
-                font-size: $fs5;
-                font-family: $sans;
-                text-transform: uppercase;
-                text-align: right;
-            }
-        }
-    }
-
-    .social {
-      position: absolute;
-      top: 109px;
-      @include column(3,12);
-      right: 5vw;
-      font-style: italic;
-      a {
-        &:hover {
-          color: $white;
-        }
-      }
-      .author-card {
-        text-align: center;
-        @include column(6,12);
-        img {
-          @include br(50px);
-        }
-        span {
-          font-family: $sans;
-          font-style: normal;
-        }
-      }
-      ul {
-        margin: 0;
-        float: right;
-        li {
-          list-style-type: none;
-          margin-bottom: $lh/2;
-          &:last-child {
-            margin-bottom: 0;
+        a {
+          &:hover {
+            color: $white;
           }
         }
       }
+      span.date {
+        float: none;
+        color: transparentize($grey-light, .4);
+        @include column(4,12);
+        position: relative;
+        font-size: $fs5;
+        font-family: $sans;
+        text-transform: uppercase;
+        text-align: right;
+      }
     }
+  }
+
+  .social {
+    position: absolute;
+    top: 109px;
+    @include column(3,12);
+    right: 5vw;
+    font-style: italic;
+    a {
+      &:hover {
+        color: $white;
+      }
+    }
+    .author-card {
+      text-align: center;
+      @include column(6,12);
+      img {
+        @include br(50px);
+      }
+      span {
+        font-family: $sans;
+        font-style: normal;
+      }
+    }
+    ul {
+      margin: 0;
+      li {
+        list-style-type: none;
+        margin-bottom: $lh/2;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a i {
+          padding-right: 0.5em;
+        }
+      }
+    }
+  }
 }
 
 .disqus {
