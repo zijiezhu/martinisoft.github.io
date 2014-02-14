@@ -1,6 +1,7 @@
 ---
 layout: post
-title: My Remote Life: Lessons and Tips
+title: "My Remote Life: Lessons and Tips"
+total_time: 6 to 8 minutes
 ---
 
 For nearly two years I have been working remotely for [Treehouse](https://teamtreehouse.com) and I'd like to share some lessons learned along with a few tips of how I adjusted. Be warned that some of these tips are a little biased around some of the benefits and current structure of Treehouse. Also know that these are my personal views and not that of Treehouse in particular. Shifting to a remote-based working style has been a little bit of a struggle, but I've learned to embrace and enjoy its affordance of freedom.
