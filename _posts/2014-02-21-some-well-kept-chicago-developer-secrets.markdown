@@ -21,7 +21,7 @@ If you're seeking mentorship, know that the mentor's time is valuable, especiall
 
 ### #3 - Attend meetups
 
-In Chicago on any given week; there is a meetup practically every day (including weekends) for a programming language, framework, or methodology. If your Friday afternoons are available, consider attending [8th Light University](http://university.8thlight.com/) or if Tuesday afternoon works better checkout [Geekfest](http://www.meetup.com/Geekfest/). Checkout sites like [Meetup](http://www.meetup.com/find/) and search for your favorite programming language or framework. Chances are a meetup is happening soon and you could attend to find some new friends. Sometimes these meetups are sponsored with free food and drinks too, which is a bonus for the starving (or broke) student.
+In Chicago on any given week; there is a meetup practically every day (including weekends) for a programming language, framework, or methodology. If your Friday afternoons are available, consider attending [8th Light University](http://university.8thlight.com/) or if Tuesday afternoon works better checkout [Geekfest](http://www.meetup.com/Geekfest/). Visit [meetup.com](http://www.meetup.com/find/) and search for your favorite programming language or framework. Chances are a meetup is happening soon and you could attend to find some new friends. Sometimes these meetups are sponsored with free food and drinks too, which is a bonus for the starving (or broke) student.
 
 
 ### Get out there!
