@@ -11,7 +11,7 @@ Chicago is home to __a lot__ of development studios and believe it or not, many 
 
 If you're looking for a job, seeking mentorship, or simply want to meet and hang out with developers. Reach out to the many shops and simply ask if you can spend a day or part of a day with them. You would be shocked at how many will not only say yes, but welcome you with open arms and sometimes even offer you a free lunch.
 
-[Working remotely](/2014/02/14/my-remote-life--lessons-and-tips.html) does provide the advantage of being able to visit other offices and network. It's my #1 tip to al new developers wanting to know how and where to connect.
+[Working remotely](/2014/02/14/my-remote-life--lessons-and-tips.html) does provide the advantage of being able to visit other offices and network. It's my #1 tip to all new developers wanting to know how and where to connect.
 
 ### #2 - Mentorship is a two-way street
 
