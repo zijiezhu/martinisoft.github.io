@@ -30,12 +30,6 @@ a:hover {
   @include transit(all,.25s, ease-in-out);
 }
 
-em {
-  padding: 1px 2px;
-  border-radius: 2px;
-  background: #ffe8c0;
-}
-
 strong {
   font-weight: bold;
 }
