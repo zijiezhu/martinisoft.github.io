@@ -1,12 +1,13 @@
 name: Martini Software
 title: Martini Software
-pygments: true
+highlighter: true
 markdown: redcarpet
 exclude:
   - README.markdown
   - Rakefile
   - Gemfile
   - Gemfile.lock
+  - Guardfile
   - .ruby-version
   - .ruby-gemset
   - .gitignore
