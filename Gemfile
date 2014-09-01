@@ -1,9 +1,11 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "jekyll", "~> 1.4.2"
-
-gem "jekyll-assets", "~> 0.7.4"
-gem "coffee-script"
-gem "uglifier"
-gem "sass"
-gem "font-awesome-sass"
+gem 'coffee-script'
+gem 'font-awesome-sass'
+gem 'guard'
+gem 'guard-jekyll-plus'
+gem 'guard-livereload'
+gem 'jekyll', '~> 1.4.2'
+gem 'jekyll-assets', '~> 0.7.4'
+gem 'sass'
+gem 'uglifier'
