@@ -36,14 +36,14 @@ end
 desc 'Publish draft post'
 task :publish_draft do
   files = Dir.glob("_drafts/*.markdown")
-  case files.size
-  when 0
+  if files.size == 0
     puts "Nothing to publish :("
-  when 1
-    post_data = files.first.match(/(?<date>\d{4}-\d{2}-\d{2})-(?<title>.+).markdown$/)
-    if ask("Do you want to publish #{post_data[:title]}? (Y/n)") == 'Y'
-      sh "git mv #{files.first} '_posts'"
-      # FileUtils.mv files.first, "_posts"
+  else
+    files.each do |file|
+      post_data = file.match(/(?<date>\d{4}-\d{2}-\d{2})-(?<title>.+).markdown$/)
+      if ask("Do you want to publish #{post_data[:title]}? (Y/n)") == 'Y'
+        sh "git mv #{file} '_posts'"
+      end
     end
   end
 end
