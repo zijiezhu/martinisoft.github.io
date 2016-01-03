@@ -9,7 +9,3 @@ set -e
 # Set up Ruby dependencies via Bundler.
 gem install bundler --conservative
 bundle check || bundle install
-
-# Set up JS dependencies via Bower.
-bower --version > /dev/null || npm install -g bower
-bower install

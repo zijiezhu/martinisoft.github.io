@@ -20,7 +20,6 @@ fi
 git checkout -b gh-pages
 
 # Build site.
-bower install
 bundle exec jekyll build
 
 # Delete and move files.
@@ -38,7 +37,6 @@ git push -f -q $ORIGIN_CREDENTIALS gh-pages
 
 # Move back to previous branch.
 git checkout -
-bower install
 
 echo "Deployed Successfully!"
 
