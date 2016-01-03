@@ -1,6 +1,5 @@
 name: Martini Software
 title: Martini Software
-highlighter: true
 markdown: redcarpet
 exclude:
   - README.markdown
@@ -11,10 +10,11 @@ exclude:
   - .ruby-version
   - .ruby-gemset
   - .gitignore
+gems:
+  - jekyll-assets
 timezone: America/Chicago
 
 assets:
-  cache: true
   css_compressor: sass
   js_compressor: uglifier
   sources:
