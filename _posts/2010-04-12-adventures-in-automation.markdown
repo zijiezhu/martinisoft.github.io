@@ -29,4 +29,4 @@ Someone came up with the brilliant idea of making a command line wrapper around 
 
 ### Conclusion
 
-I may make a second part to this post about the automation I've done on this blog, but for now you can take a peek at the commented code in the [Rakefile](http://github.com/martinisoft/martinisoft.github.com/blob/master/Rakefile)
+I may make a second part to this post about the automation I've done on this blog, but for now you can take a peek at the commented code in the [Rakefile](http://github.com/martinisoft/martinisoft.github.io/blob/master/Rakefile)
