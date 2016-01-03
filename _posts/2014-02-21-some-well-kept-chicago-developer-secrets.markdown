@@ -11,11 +11,11 @@ Chicago is home to __a lot__ of development studios and believe it or not, many 
 
 If you're looking for a job, seeking mentorship, or simply want to meet and hang out with developers. Reach out to the many shops and simply ask if you can spend a day or part of a day with them. You would be shocked at how many will not only say yes, but welcome you with open arms and sometimes even offer you a free lunch.
 
-[Working remotely](/2014/02/14/my-remote-life--lessons-and-tips.html) does provide the advantage of being able to visit other offices and network. It's my #1 tip to all new developers wanting to know how and where to connect.
+[Working remotely]({% post_url 2014-02-14-my-remote-life--lessons-and-tips %}) does provide the advantage of being able to visit other offices and network. It's my #1 tip to all new developers wanting to know how and where to connect.
 
 ### #2 - Mentorship is a two-way street
 
-Mentorship is one of the things I seek out personally and attempt to provide as a means to give back to the software development community. Simply dispensing advice, guidence, or career advice; can mean worlds to someone new or continuing their journey of software development. One thing I've heard from other mentors helping students is that people notoriously don't seek out experienced people for help or advice. Even with formalized systems like [pairing is caring](mentoring.devbootcamp.com) there is very little uptake in help when offered. This isn't because mentors are being lazy, but because they are busy and students seemingly feel afraid to approach them.
+Mentorship is one of the things I seek out personally and attempt to provide as a means to give back to the software development community. Simply dispensing advice, guidence, or career advice; can mean worlds to someone new or continuing their journey of software development. One thing I've heard from other mentors helping students is that people notoriously don't seek out experienced people for help or advice. Even with formalized systems like [pairing is caring](http://mentoring.devbootcamp.com) there is very little uptake in help when offered. This isn't because mentors are being lazy, but because they are busy and students seemingly feel afraid to approach them.
 
 If you're seeking mentorship, know that the mentor's time is valuable, especially their free time. You will likely have to chase them down for help, not the other way around. Offer to take them to lunch, have a cup of coffee, or a beer to socialize.
 

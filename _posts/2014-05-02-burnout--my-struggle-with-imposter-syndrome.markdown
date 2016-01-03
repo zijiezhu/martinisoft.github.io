@@ -12,7 +12,7 @@ Imposter Syndrome is a psychological phenomena where you are unable to internali
 
 ### I've been here before
 
-To put this into context, I have been programming for roughly 18 years now. I got curious at a young age and never really lost the addiction of solving problems, especially with code. Family members would send me puzzles as gifts and I would solve them almost as fast as I could open the box. However, I almost gave all of that up around 8 years ago and I [wrote about it](http://martinisoftware.com/2013/05/03/don-t-be-nervous.html) last year. Faced with two really badly executed contracts, it put into question my inexperience with client work, but not my technical skills as a developer and that almost caused me to quit.
+To put this into context, I have been programming for roughly 18 years now. I got curious at a young age and never really lost the addiction of solving problems, especially with code. Family members would send me puzzles as gifts and I would solve them almost as fast as I could open the box. However, I almost gave all of that up around 8 years ago and I [wrote about it]({% post_url 2013-05-03-don-t-be-nervous %}) last year. Faced with two really badly executed contracts, it put into question my inexperience with client work, but not my technical skills as a developer and that almost caused me to quit.
 
 ### So what happened this time?
 

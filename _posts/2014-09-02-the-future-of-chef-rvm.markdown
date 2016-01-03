@@ -34,7 +34,7 @@ What does the future hold beyond 1.0? Once 1.0 is stable and out there, chef-rvm
 
 [Fletcher]: https://github.com/fnichol
 [chef-rvm]: https://github.com/fnichol/chef-rvm
-[demons]: http://martinisoftware.com/2014/05/02/burnout--my-struggle-with-imposter-syndrome.html
+[demons]: {% post_url 2014-05-02-burnout--my-struggle-with-imposter-syndrome %}
 [hate]: https://sethvargo.com/leaving-chef/
 [supermarket]: https://supermarket.getchef.com/
 [environment-cookbooks]: http://blog.vialstudios.com/the-environment-cookbook-pattern/
