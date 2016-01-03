@@ -17,7 +17,7 @@ if [ `git branch | grep gh-pages` ]
 then
   git branch -D gh-pages
 fi
-git checkout -b gh-pages
+git checkout --orphan gh-pages
 
 # Build site.
 bundle exec jekyll build
