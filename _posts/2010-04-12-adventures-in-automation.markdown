@@ -11,7 +11,7 @@ Been a little while since my last post here.  A short explanation of the last 4 
 * Overtime at work
 * Studying for the CCNA and A+ exams
 
-Time was a precious commodity the past few months and I finally got a chance to breathe, collect myself and write a new post.  While trying to write this post, I managed to update some of the code running this blog to help automate posting and updating of my resume.  
+Time was a precious commodity the past few months and I finally got a chance to breathe, collect myself and write a new post.  While trying to write this post, I managed to update some of the code running this blog to help automate posting and updating of my resume.
 
 The one feature that I spent far too much time researching was converting my resume to pdf automatically when I publish a change.  I honestly don't update it that much, but I thought it would be an easy task to generate it once I updated it with some new information.  So my search began for a markdown to pdf tool. Ultimately I went with wkhtmltopdf, but I'll give some reasoning why I did not choose the other projects I found.
 
@@ -29,4 +29,4 @@ Someone came up with the brilliant idea of making a command line wrapper around 
 
 ### Conclusion
 
-I may make a second part to this post about the automation I've done on this blog, but for now you can take a peek at the commented code in the [Rakefile](http://github.com/martinisoft/martinisoft.github.io/blob/master/Rakefile)
+I may make a second part to this post about the automation I've done on this blog, but for now you can take a peek at the commented code in the [Rakefile](http://github.com/martinisoft/martinisoft.github.io/blob/source/Rakefile)
