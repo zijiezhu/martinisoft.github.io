@@ -13,11 +13,11 @@ COMMIT_MESSAGE=$(git log -1 --pretty=%B)
 echo "Started deploying"
 
 # Checkout gh-pages branch.
-if [ `git branch | grep gh-pages` ]
+if [ `git branch | grep master` ]
 then
-  git branch -D gh-pages
+  git branch -D master
 fi
-git checkout --orphan gh-pages
+git checkout --orphan master
 
 # Build site.
 bundle exec jekyll build
