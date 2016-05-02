@@ -14,7 +14,14 @@ exclude:
   - bin/*
 gems:
   - jekyll-assets
+  - jekyll-feed
 timezone: America/Chicago
+
+feed:
+  path: atom.xml
+
+author:
+  twitter: martinisoft
 
 assets:
   css_compressor: sass
