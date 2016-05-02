@@ -36,7 +36,7 @@ What does the future hold beyond 1.0? Once 1.0 is stable and out there, chef-rvm
 [chef-rvm]: https://github.com/fnichol/chef-rvm
 [demons]: {% post_url 2014-05-02-burnout--my-struggle-with-imposter-syndrome %}
 [hate]: https://sethvargo.com/leaving-chef/
-[supermarket]: https://supermarket.getchef.com/
+[supermarket]: https://supermarket.chef.io/
 [environment-cookbooks]: http://blog.vialstudios.com/the-environment-cookbook-pattern/
 [refactor]: https://github.com/fnichol/chef-rvm/pull/235
 [rvm-gem]: https://github.com/wayneeseguin/rvm-gem
@@ -45,8 +45,8 @@ What does the future hold beyond 1.0? Once 1.0 is stable and out there, chef-rvm
 [old-issue]: https://github.com/fnichol/chef-rvm/issues/68
 [semver]: http://semver.org/
 [maintainers]: https://github.com/fnichol/chef-rvm/issues/232
-[summit]: http://www.getchef.com/summit/
-[conduct]: http://www.getchef.com/blog/2014/08/27/behaving-responsibly-in-the-chef-community/
+[summit]: https://summit.chef.io/
+[conduct]: http://www.chef.io/blog/2014/08/27/behaving-responsibly-in-the-chef-community/
 [mpapis]: https://github.com/mpapis
-[LWRP]: http://docs.getchef.com/lwrp.html
+[LWRP]: https://docs.chef.io/custom_resources.html
 [demands]: https://speakerdeck.com/sethvargo/dealing-with-the-demands-of-the-open-source-community
